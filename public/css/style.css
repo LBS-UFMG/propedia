@@ -1,0 +1,119 @@
+/* Estilo CSS criado por Diego */
+
+header { height: 80px; margin:0;}
+header nav{ background-color: #a7d080; background: linear-gradient(135deg, #5cb582 0%,#a7d080 100%); }
+header img { max-height: 100%; padding-top:8px;}
+section { padding:60px 0; }
+footer { background-color: #111; min-height: 50px; color:#e4e4e4; padding:30px 30px; }
+::selection{ background: #18bc9c; color: #fff; }
+
+#subNav { height:30px; background-color:#18bc9c; }
+#pos_footer { background-color:#000; text-align: center; color:#ccc; padding:10px; font-size: 10px; }
+#menu { text-align: right; margin-top: 0px; }
+#menu a { color:#fff; font-weight: bold; text-decoration: none; }
+#menu li { padding:15px; }
+/* #menu li:hover { background-color:#18bc9c; } */
+
+/*#content { margin-top:70px; }*/
+#hero { background-color:#e4e5e6; background-image: url('../img/header.jpg'); background-position: center top; background-repeat: no-repeat; min-height: 750px; color:#111; }
+#hero h1 { font-size: 48px; }
+#hero h3 { font-weight: 400 !important; line-height: 130%; padding:20px 0; }
+#overlay_hero { /*background-image: url('../img/overlay.png'); */width: 100%; min-height: 600px; padding-top:130px;  }
+#explore{ padding: 20px 0 80px 0; }
+
+
+.navbar { height: 80px; }
+.navbar-nav > li > a { text-shadow: 0 1px 0 rgba(0, 0, 0, .25) }
+.navbar-nav > li > a:hover { background-color:#18bc9c;  }
+.navbar-nav > li > a:focus { background-color:#18bc9c;  }
+.icon-uniprot:before{font-family:uniprot;font-size:162.5%;color:#9d4a4d;content:attr(data-icon);margin:0 .3em 0 0;font-weight:400}
+.reviewed-icon:before{color:#c39b00}
+.unreviewed-icon:before{color:#93cffa}
+.menu_active{ background-color:#18bc9c; }
+
+.tiny {font-size: 12px;}
+.very_tiny {font-size: 9px;}
+.organism {font-size: 12px; font-style: italic;}
+.large-row {margin-right: -5px; margin-left: -5px;}
+
+.tip {font-size: 10px;}
+
+.specific_db:hover { background-color: #ccc;  }
+
+.title_complex{color: #09b0b2;width: 7em;display: inline-block; vertical-align: top; font-size: 130%; text-align: right}
+.la{display: inline-block; vertical-align: top; margin-top: 0; padding-top: 0; padding-left: .5em; border-left-width: 4px; margin-left: 4px; border-left-style: solid; box-sizing: border-box;border-left-color: #99c6d7}
+.lb{display: inline-block; vertical-align: top; margin-top: 0; padding-top: 0; padding-left: .5em; border-left-width: 4px; margin-left: 4px; border-left-style: solid; box-sizing: border-box;border-left-color: #fcdf99}
+.lc{display: inline-block; vertical-align: top; margin-top: 0; padding-top: 0; padding-left: .5em; border-left-width: 4px; margin-left: 4px; border-left-style: solid; box-sizing: border-box;border-left-color: #fcaa99}
+.ld{display: inline-block; vertical-align: top; margin-top: 0; padding-top: 0; padding-left: .5em; border-left-width: 4px; margin-left: 4px; border-left-style: solid; box-sizing: border-box;border-left-color: #99b6c1}
+.le{width: 20em; word-wrap:break-word; display: inline-block; vertical-align: top; margin-top: 0; padding-top: 0; padding-left: .5em; border-left-width: 4px; margin-left: 4px; border-left-style: solid; box-sizing: border-box;border-left-color: #fcaa99}
+
+.my-legend .legend-title {
+text-align: left;
+margin-bottom: 8px;
+font-weight: bold;
+font-size: 90%;
+}
+.my-legend .legend-scale ul {
+margin: 0;
+padding: 0;
+float: left;
+list-style: none;
+}
+.my-legend .legend-scale ul li {
+display: block;
+float: left;
+width: 170px;
+margin-bottom: 6px;
+text-align: center;
+font-size: 80%;
+list-style: none;
+}
+.my-legend ul.legend-labels li span {
+display: block;
+float: left;
+height: 15px;
+width: 170px;
+}
+.my-legend .legend-source {
+font-size: 70%;
+color: #999;
+clear: both;
+}
+.my-legend a {
+color: #777;
+}
+
+.dataTables tbody tr {
+max-height: 10px; /* or whatever height you need to make them all consistent */
+}
+
+/* D3JS */
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+text {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+.icon-d {
+    color: yellow;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+}
+
+.col-spacing_custom {
+	padding-right: 2px;
+    padding-left: 15px;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background-color:#eee0 !important;
+}
