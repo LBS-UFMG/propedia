@@ -27,11 +27,10 @@ class Home extends BaseController{
             ),
             "scripts" => array(
                 "home.js",
-                /*"bubble_chart_tooltip.js",
-                "bubble_chart.js"*/
+                "bubble_chart_tooltip.js",
+                "bubble_chart.js"
             ),            
         );
-        $data = [];
 
         return view('home',$data);
 
