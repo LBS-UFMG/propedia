@@ -20,3 +20,12 @@ application/logs/*
 /vendor/
 .env
 *.log
+
+web/public/pdb
+web/public/probis
+web/public/download
+web/application/config/database.php
+
+beta_version/vendor
+beta_version/.env
+beta_version/writable/logs/*
