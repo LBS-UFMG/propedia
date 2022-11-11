@@ -463,7 +463,7 @@
                   <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
                   <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
                <?php else: ?>
-                  <script src="<?=base_url("/js/$script_name")?>"></script>
+                  <script src="<?=base_url('/js/'.$script_name)?>"></script>
                <?php endif; ?>
             <?php endforeach; ?>
          <?php endif; ?>
