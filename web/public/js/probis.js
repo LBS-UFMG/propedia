@@ -22,7 +22,7 @@ $(function() {
 			"responsive": false,
 	        "paging":     false,
 			"ajax": {
-				"url": BASE_URL + "search/ajax_show_result",
+				"url": BASE_URL + "index.php/search/ajax_show_result",
 				"type": "POST",
 				"data": {
 					"project_id": project_id,

@@ -14,7 +14,7 @@ $(function() {
 		"responsive": true,
 		"deferLoading": 0, // here
 		"ajax": {
-			"url": BASE_URL + "explore/ajax_list_complex",
+			"url": BASE_URL + "index.php/explore/ajax_list_complex",
 			"type": "POST",
 			"data": function (d) {
         		d.wheres = wheres//.join("|");

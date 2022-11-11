@@ -267,6 +267,8 @@
   </form>
 </div>
 
+</div>
+
 <div id="explore">
     <div class="container">
         <h2><strong>Complex samples</strong></h2>
@@ -289,3 +291,4 @@
         <a class="btn btn-outline-success btn-lg d-block" href="<?php echo base_url('explore'); ?>" role="button">Show more...</a>
     </div>
 </div>
+
