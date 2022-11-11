@@ -190,7 +190,7 @@ class ClusterModel extends Model {
 
 		$db = $conexao->table('cluster_sequence');
 		$db->select("count(distinct cluster_num) as number_cluster_sequence");
-		$db->limit(1);
+		// $db->limit(1);
 		$query = $db->get();
 		$number_cluster_sequence = $query->getResult();
 		dd($number_cluster_sequence);
