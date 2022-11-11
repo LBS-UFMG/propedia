@@ -11,7 +11,7 @@ class Home extends BaseController{
         
         // $clusters = new ClusterModel(); // conecta com o banco de dados e retorna um objeto de conexão
         $cluster_info = ClusterModel::get_cluster_numbers(); // acessa um método estático
-        $complex_number = ClusterModel::get_complex_number();
+        $complex_number = ComplexModel::get_complex_number();
 
         // $this->load->model("cluster_model");
         // $cluster_info = ClusterModel::get_cluster_numbers();
