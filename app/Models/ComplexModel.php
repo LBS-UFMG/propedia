@@ -11,8 +11,15 @@ class ComplexModel extends Model {
 	}
 
 	public function get_complex_number($CCD=FALSE) {
-		$dbtmp = \Config\Database::connect();
-		$db = $dbtmp->table('complex');
+
+		$conexao = \Config\Database::connect();
+
+		// $db = $conexao->table('cluster_sequence');
+		// $db->select("count(distinct cluster_num) as number_cluster_sequence");
+		// $number_cluster_sequence = $db->get()->getResult()[0]->number_cluster_sequence;
+
+
+		$db = $conexao->table('complex');
 
 		$db->select("count(id_complex) complex_number");
 		$db->from("complex");
@@ -20,7 +27,7 @@ class ComplexModel extends Model {
 			$db->where("is_ccd", "1");
 		}
 
-		return $db->get()->first_row()->complex_number;
+		return $db->get()->getResult()[0]->complex_number;
 		
 	}
 
