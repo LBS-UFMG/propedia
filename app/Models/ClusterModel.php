@@ -193,16 +193,9 @@ class ClusterModel extends Model {
 		// $db->limit(1);
 		$query = $db->get();
 		$number_cluster_sequence = $query->getResult()[0]->number_cluster_sequence;
-		dd($number_cluster_sequence);
 
 
-		
-		// $db->from("cluster_sequence");
-		$number_cluster_sequence = $db->get();
-		dd($number_cluster_sequence);
-		exit();
 		$db->select("count(cluster_num) number_singletons_sequence");
-		$db->from("cluster_sequence");
 		$db->where("cluster_num", -1);
 		$number_singletons_sequence = $db->get()->getRow()->number_singletons_sequence;
 
