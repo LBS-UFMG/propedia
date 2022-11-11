@@ -1,25 +1,15 @@
-# propedia v2.3
+# Propedia v2.3
 
 Instalando:
 
-git clone https://github.com/LBS-UFMG/propedia.git
+    git clone https://github.com/LBS-UFMG/propedia.git
 
-    cd propedia
-    composer install
 
-    cp env .env
-    nano .env
+## web (v2.3)
 
-Faça as configurações necessárias (configure o ambiente de produção, banco de dados e url padrão)
+This directory contains the main version of the web application. Developed with CodeIgniter 3.
 
-Agora, mude as permissões de arquivos:
-    sudo chown -R www-data:www-data *
 
-## Migrando do CodeIgniter 3 para o 4
+## beta_version
 
-Copie os arquivos em ./app/models, ./app/controllers e app/views 
-para as pastas correspondentes no CodeIgniter 4
-
-Construa as rotas
-Copie os arquivos em public
-
+Trial version updated with CodeIgniter 4. In development.
