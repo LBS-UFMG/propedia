@@ -136,7 +136,7 @@
 </div> -->
 
 
-<div class="container" id="browse_dataset">
+<section class="container" id="browse_dataset">
   <h2 class="mt-5 mb-3"><label class="badge bg-success me-2">New</label><strong>Browse by specific datasets</strong> <a href="<?= base_url('/explore'); ?>" class="btn btn-outline-primary">View all</a></h2>
   <p class="lead text-muted">Propedia is composed of many datasets of protein-peptide complexes. You can explore and construct your queries clicking on "View all" button or browse by the most accessed datasets shown below.</p>
 
@@ -149,7 +149,7 @@
       <!-- COLUNA ESQUERDA -->
       <div class="col-12 col-lg-6" id="bubble">
 
-        <div class="card" style="border-left: #ccc 5px solid; color: #ccc; height: 712px">
+        <div class="card" style="border-left: #ccc 5px solid; color: #ccc; height: 580px">
           <div class="caption">
             <div id="bubble_chart" class="svg-container"></div>
           </div>
@@ -212,7 +212,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <!-- <div class="col-6">
             <div class="card p-2 specific_db" style="border-left: #ccc 5px solid; color: #ccc">
               <div class="caption">
                 <div class="row">
@@ -223,7 +223,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-6" onclick="showDataset([35])" title="Click to explore this dataset">
             <div class="card p-2 specific_db" style="border-left: #ff1493 5px solid; color: #ff1493">
@@ -251,7 +251,7 @@
             </div>
           </div>
 
-          <div class="col-6">
+          <!-- <div class="col-6">
             <div class="card p-2 specific_db" style="border-left: gold 5px solid; color: #ccc">
               <div class="caption">
                 <div class="row">
@@ -262,12 +262,12 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div><!-- row -->
   </form>
 </div>
 
-</div>
+</section>
 
 <div id="explore">
     <div class="container">
