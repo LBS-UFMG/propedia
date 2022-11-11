@@ -11,7 +11,7 @@ class Explore extends BaseController
 
     // $this->load->model("explore_model");
     $organisms = ExploreModel::get_organisms();
-    dd($organisms);
+
     $groups = [];
     $groups_selected = $this->input->post("groups_selected");
     if (!empty($groups_selected)) {
