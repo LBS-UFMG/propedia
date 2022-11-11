@@ -16,7 +16,7 @@ $(function() {
         "searching":    false,
         "responsive":   true,
 		"ajax": {
-			"url": frontend + "explore/ajax_list_complex",
+			"url": frontend + "index.php/explore/ajax_list_complex",
 			"type": "POST",
 			"data": {"wheres" : ["c.id_complex in (" + rand + ")"]},
 		},

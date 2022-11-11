@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\ExploreModel; 
+use App\Models\ComplexModel; 
 
 class Explore extends BaseController
 {
@@ -49,7 +50,7 @@ class Explore extends BaseController
       $wheres = $this->input->post("wheres");
     }
 
-    $complexes = $this->complex_model->get_datatable($wheres);
+    $complexes = ComplexModel::get_datatable($wheres);
     $query = $this->db->last_query();
 
     $data = array();

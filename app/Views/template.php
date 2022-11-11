@@ -41,7 +41,7 @@
       <ul class="nav nav-pills pt-3" id="menu">
       
 
-            <li><a href="<?php echo base_url('/explore'); ?>" role="button">Explore</a></li>
+            <li><a href="<?php echo base_url('/index.php/explore'); ?>" role="button">Explore</a></li>
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search <span class="caret"></span></a>
@@ -54,13 +54,13 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clusters <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a style="color:#333;" href="<?php echo base_url('/cluster/sequence'); ?>" role="button">Peptide sequence</a></li>
-                <li><a style="color:#333;" href="<?php echo base_url('/cluster/interface'); ?>" role="button">Structure interface</a></li>
-                <li><a style="color:#333;" href="<?php echo base_url('/cluster/binding'); ?>" role="button">Binding site</a></li>
+                <li><a style="color:#333;" href="<?php echo base_url('/index.php/cluster/sequence'); ?>" role="button">Peptide sequence</a></li>
+                <li><a style="color:#333;" href="<?php echo base_url('/index.php/cluster/interface'); ?>" role="button">Structure interface</a></li>
+                <li><a style="color:#333;" href="<?php echo base_url('/index.php/cluster/binding'); ?>" role="button">Binding site</a></li>
               </ul>
             </li>
 
-            <li><a href="<?php echo base_url('download'); ?>" role="button">Download</a></li>
+            <li><a href="<?php echo base_url('index.php/download'); ?>" role="button">Download</a></li>
             <li><a href="#" data-bs-toggle="modal" data-bs-target="#about">About</a></li>
           </ul>
     </div>

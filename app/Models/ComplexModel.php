@@ -24,11 +24,12 @@ class ComplexModel extends Model {
 		
 	}
 
-	public function get_complex_interface_cluster($complex) {
-
+	public static function get_complex_interface_cluster($complex) {
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('complex c');
 		list($pdb, $peptide_chain, $receptor_chain) = explode("-", $complex);
 		$db->select("i.cluster_num");
-		$db->from("complex c");
+		// $db->from("complex c");
 		$db->join("cluster_interface i", "c.id_complex = i.id_complex", "left");
 		$db->join("pdb", "pdb.id_pdb = c.id_pdb", "left");
         $db->join("peptide p", "p.id_peptide = c.id_peptide", "left");
@@ -40,11 +41,13 @@ class ComplexModel extends Model {
 		
 	}
 
-	public function get_complex_binding_cluster($complex) {
+	public static function get_complex_binding_cluster($complex) {
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('complex c');
 
 		list($pdb, $peptide_chain, $receptor_chain) = explode("-", $complex);
 		$db->select("b.cluster_num");
-		$db->from("complex c");
+		// $db->from("complex c");
 		$db->join("cluster_binding b", "c.id_complex = b.id_complex", "left");
 		$db->join("pdb", "pdb.id_pdb = c.id_pdb", "left");
         $db->join("peptide p", "p.id_peptide = c.id_peptide", "left");
@@ -56,15 +59,16 @@ class ComplexModel extends Model {
 		
 	}
 
-	public function get_complex_data($complex) {
-		
+	public static function get_complex_data($complex) {
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('complex_explore_view');
 		$complex_explode = explode("-", $complex);
 		
 		if (sizeof($complex_explode) != 3) {
 			return NULL;
 		} else {
 			list($pdb, $peptide_chain, $receptor_chain) = $complex_explode;
-			$db->from("complex_explore_view");
+			// $db->from("complex_explore_view");
 			$db->where("pdb",$pdb);
 			$db->where("peptide_chain",$peptide_chain);
 			$db->where("receptor_chain",$receptor_chain);
@@ -76,11 +80,13 @@ class ComplexModel extends Model {
 	/*IFNULL(i.interface_rmsd, '-') irmsd, 
      IFNULL(co.diff_alignment_score, '-') z_score,*/
 
-	public function get_similar_complexes($id_complex) {
+	public static function get_similar_complexes($id_complex) {
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('cluster_sequence');
 
 		# GET CLUSTER NUM SEQUENCE 
 		$db->select("cluster_num");
-		$db->from("cluster_sequence");
+		// $db->from("cluster_sequence");
 		$db->where("id_complex", $id_complex);		
 		$result = $db->get();
 		$cluster_num_sequence = NULL;
@@ -163,11 +169,12 @@ class ComplexModel extends Model {
 
 	}
 
-	public function get_complex_sequence_cluster($complex) {
-
+	public static function get_complex_sequence_cluster($complex) {
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('complex c');
 		list($pdb, $peptide_chain, $receptor_chain) = explode("-", $complex);
 		$db->select("s.cluster_num");
-		$db->from("complex c");
+		// $db->from("complex c");
 		$db->join("cluster_sequence s", "c.id_complex = s.id_complex", "left");
 		$db->join("pdb", "pdb.id_pdb = c.id_pdb", "left");
         $db->join("peptide p", "p.id_peptide = c.id_peptide", "left");
@@ -183,7 +190,8 @@ class ComplexModel extends Model {
 		"CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain)");	
 
 	private function complex_view() {
-
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('complex c');
 		$db->start_cache();
 		$db->select("CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain) complex");		
 		$db->select("p.peptide_size peptide_size");
@@ -235,6 +243,8 @@ class ComplexModel extends Model {
 	} 
 
 	private function _get_datatable($wheres) {
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('complex');
 
 		$search = NULL;
 		if ($this->input->post("search")) {
@@ -296,7 +306,7 @@ class ComplexModel extends Model {
 
 	}
 
-	public function get_datatable($wheres) {
+	public static function get_datatable($wheres) {
 
 		$length = $this->input->post("length");
 		$start = $this->input->post("start");
@@ -307,7 +317,10 @@ class ComplexModel extends Model {
 		return $db->get()->result();
 	}
 
-	public function records_filtered($wheres) {
+	public static function records_filtered($wheres) {
+		
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('complex');
 
 		$response = array();
 
@@ -341,7 +354,7 @@ class ComplexModel extends Model {
 
 	}
 
-	public function records_total() {
+	public static function records_total() {
 
 		$this->complex_view();
 		return $db->count_all_results();
