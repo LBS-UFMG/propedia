@@ -9,23 +9,22 @@ class Explore extends BaseController
   public function index()
   {
 
-    // $this->load->model("explore_model");
     $organisms = ExploreModel::get_organisms();
 
     $groups = [];
-    $groups_selected = $this->input->post("groups_selected");
+    // $groups_selected = $this->input->post("groups_selected");
     if (!empty($groups_selected)) {
       $groups = ExploreModel::get_groups($groups_selected);
     } else {
       $groups = ExploreModel::get_groups();
     }
 
-    $complex_list = $this->input->post("complex_list");
+    // $complex_list = $this->input->post("complex_list");
 
     $data = array(
       "organisms" => $organisms,
       "groups" => $groups,
-      "complex_list" => $complex_list,
+      // "complex_list" => $complex_list,
       "scripts" => array(
         "explore.js"
       )
