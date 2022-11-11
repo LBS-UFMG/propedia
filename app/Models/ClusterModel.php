@@ -193,7 +193,7 @@ class ClusterModel extends Model {
 		// $db->limit(1);
 		$query = $db->get();
 		$number_cluster_sequence = $query->getResult()[0]->number_cluster_sequence;
-
+		dd($number_cluster_sequence);
 		$db = $conexao->table('cluster_sequence');
 		$db->select("count(cluster_num) number_singletons_sequence");
 		$db->where("cluster_num", -1);
