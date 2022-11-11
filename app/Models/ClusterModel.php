@@ -192,7 +192,12 @@ class ClusterModel extends Model {
 
 
 $query = $builder->get();
-dd($query);
+
+foreach ($query->getResult() as $row) {
+   d($row);
+}
+
+return $row;
 
 // $builder->from('mytable');
 
