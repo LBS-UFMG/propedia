@@ -1,8 +1,8 @@
 <?= $this->extend('template') ?>
 <?= $this->section('conteudo') ?>
 
-<div class="container">
-   <div id="advanced_search" class="thumbnail" style="border-left: #ccc 5px solid; background-color:#eee; color: #ccc; margin-bottom: 0">
+<div class="container-fluid">
+   <div id="advanced_search" class="card p-3 small" style="border-left: #ccc 5px solid; background-color:#eee; color: #ccc; margin-bottom: 0">
       <div class="caption"> 
          <div class="row">
             <div class="col-md-12 col-sm-12">
@@ -105,7 +105,7 @@
       <button id="clear_filters" type="reset" class="btn btn-default">Clear filter</button>            
    </div>
    <div class="col-md-offset-8 col-md-2 col-sm-2">
-      <button id="apply_filter" type="button" class="btn btn-warning btn-block">Apply filter&nbsp;<i class="fas fa-filter"></i></button>
+      <button id="apply_filter" type="button" class="btn btn-primary d-block">Apply filter&nbsp;<i class="fas fa-filter"></i></button>
       <p class="text-success text-right hidden" id="filter_applied">Filter applied.</p>
    </div>
 <!--
