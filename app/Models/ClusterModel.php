@@ -189,22 +189,13 @@ class ClusterModel extends Model {
 		$db = \Config\Database::connect();
 
 		$builder = $db->table('cluster_sequence');
+		// $query = $builder->get();
 
-
-$query = $builder->get();
-
-foreach ($query->getResult() as $row) {
-   d($row);
-}
-
-return $row;
-
-// $builder->from('mytable');
-
-
-		$db = $this->db->table('cluster_sequence');
-		$db->select("count(distinct cluster_num) as number_cluster_sequence");
-
+		$builder->select("count(distinct cluster_num) as number_cluster_sequence");
+		$query = $builder->get();
+		$resposta = $query->getResult();
+		dd($resposta);
+		
 		// $db->from("cluster_sequence");
 		$number_cluster_sequence = $db->get();
 		dd($number_cluster_sequence);
