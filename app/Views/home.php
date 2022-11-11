@@ -37,7 +37,7 @@
               <h1>
                 <strong>
                   <a class="text-success" href="<?php echo base_url('/explore'); ?>">
-                    </ /?=number_format($complex_number)?>
+                    <?=number_format($complex_number)?>
                   </a>
                 </strong>
               </h1>
