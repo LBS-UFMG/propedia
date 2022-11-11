@@ -95,13 +95,13 @@ class Explore extends CI_Controller{
                         
                         $cluster_url = $complex_url."$complex->complex";
                         $a = "<a title='Classified in the sequence singleton'  style='text-decoration:none' href='$cluster_url'>";                    
-                        //$span = "<span class='label label-success'>Singleton S";
+                        //$span = "<span class='badge bg-success'>Singleton S";
                     } else {                        
                         $cluster_url = base_url() . "cluster/sequence/$cluster_num";
                         $a = "<a title='Classified in the sequence cluster number $cluster_num' style='text-decoration:none' href='$cluster_url'>";
                     }
                 
-                    $span = "<span class='label label-success'>Cluster S" . $cluster_num;
+                    $span = "<span class='badge bg-success'>Cluster S" . $cluster_num;
                     //}                
 
                     # SINGLETONS
@@ -130,13 +130,13 @@ class Explore extends CI_Controller{
                         
                         $cluster_url = $complex_url."$complex->complex";
                         $a = "<a title='Classified in the interface singleton'  style='text-decoration:none' href='$cluster_url'>";                    
-                        //$span = "<span class='label label-success'>Singleton S";
+                        //$span = "<span class='badge bg-success'>Singleton S";
                     } else {                        
                         $cluster_url = base_url() . "cluster/interface/$cluster_num";
                         $a = "<a title='Classified in the interface cluster number $cluster_num' style='text-decoration:none' href='$cluster_url'>";
                     }
                 
-                    $span = "<span class='label label-danger'>Cluster I" . $cluster_num;
+                    $span = "<span class='badge bg-danger'>Cluster I" . $cluster_num;
                     //}                
 
                     # SINGLETONS
@@ -165,13 +165,13 @@ class Explore extends CI_Controller{
                         
                         $cluster_url = $complex_url."$complex->complex";
                         $a = "<a title='Classified in the binding singleton'  style='text-decoration:none' href='$cluster_url'>";                    
-                        //$span = "<span class='label label-success'>Singleton S";
+                        //$span = "<span class='badge bg-success'>Singleton S";
                     } else {                        
                         $cluster_url = base_url() . "cluster/binding/$cluster_num";
                         $a = "<a title='Classified in the binding cluster number $cluster_num' style='text-decoration:none' href='$cluster_url'>";
                     }
                 
-                    $span = "<span class='label label-primary'>Cluster B" . $cluster_num;
+                    $span = "<span class='badge bg-primary'>Cluster B" . $cluster_num;
                     //}                
 
                     # SINGLETONS
