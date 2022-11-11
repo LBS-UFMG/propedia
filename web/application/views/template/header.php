@@ -47,7 +47,7 @@
   <header class="bg-success">
     <div class="container-fluid d-flex flex-wrap justify-content-center">
       <a href="<?=base_url()?>" title="Home" class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none">
-        <img src="<?=base_url('/img/logo_propedia.svg')?>" width="300">
+        <img src="<?=base_url('public/img/logo_propedia.svg')?>" width="300">
         <label class="badge bg-warning mt-4">v2.3</label>
       </a>
 

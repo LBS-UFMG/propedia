@@ -13,7 +13,7 @@
           <!--<a href="#" data-toggle="modal" class="btn btn-success btn-lg" data-target="#tutorial">Tutorial</a>-->
         </div>
         <div class="col-md-5 col-xs-12">
-          <img title="Propedia" src="<?php echo base_url('/img/fig_pedro2.png'); ?>" class="w-100" style="margin-top:-50px">
+          <img title="Propedia" src="<?php echo base_url('public/img/fig_pedro2.png'); ?>" class="w-100" style="margin-top:-50px">
         </div>
       </div>
       <div id="run" style="margin:60px"></div>
