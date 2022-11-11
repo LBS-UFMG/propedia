@@ -30,10 +30,10 @@
       <div class="card p-2" style="border-left: #5cb85c 5px solid; color: #ccc">
         <div class="caption">
           <div class="row">
-            <div class="col-3 text-success ms-1" style="font-size: 72px">
+            <div class="col-4 text-success" style="font-size: 72px">
               <i class="fas fa-database"></i>
             </div>
-            <div class="col-md-9 text-end">
+            <div class="col-8 text-end">
               <h1 class="mt-3">
                 <strong>
                   <a class="text-success" href="<?php echo base_url('/explore'); ?>">
@@ -41,7 +41,7 @@
                   </a>
                 </strong>
               </h1>
-              <p class="text-muted small"><strong>PEPTIDE-PROTEIN COMPLEXES*</strong></p>
+              <p class="text-muted small"><strong>PEPTIDE COMPLEXES*</strong></p>
             </div>
           </div>
         </div>
