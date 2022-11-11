@@ -15,9 +15,9 @@ class Explore extends BaseController
     $groups = [];
     $groups_selected = $this->input->post("groups_selected");
     if (!empty($groups_selected)) {
-      $groups = $this->explore_model->get_groups($groups_selected);
+      $groups = ExploreModel::get_groups($groups_selected);
     } else {
-      $groups = $this->explore_model->get_groups();
+      $groups = ExploreModel::get_groups();
     }
 
     $complex_list = $this->input->post("complex_list");

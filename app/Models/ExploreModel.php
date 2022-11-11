@@ -12,15 +12,15 @@ class ExploreModel extends Model {
 		$db = $conexao->table('organism');
 
 		return $db->get()->getResult();
-	
 	}
 
-	public function get_groups($groups_selected="(0)") {
-			
+	public static function get_groups($groups_selected="(0)") {
+
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('groups g');
 		$db->select("g.id_group, g.group, IF(g.id_group in $groups_selected ,1,0) selected");
-		$db->from("groups g");		
-		return $db->get()->result();
-	
+		
+		return $db->get()->getResult();
 	}
 
 	public function get_bubble_data() {
