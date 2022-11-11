@@ -12,7 +12,7 @@ footer { background-color: #111; min-height: 50px; color:#e4e4e4; padding:30px 3
 #menu { text-align: right; margin-top: 0px; }
 #menu a { color:#fff; font-weight: bold; text-decoration: none; }
 #menu li { padding:15px; }
-#menu li:hover { background-color:#18bc9c; }
+/* #menu li:hover { background-color:#18bc9c; } */
 
 /*#content { margin-top:70px; }*/
 #hero { background-color:#e4e5e6; background-image: url('../img/header.jpg'); background-position: center top; background-repeat: no-repeat; min-height: 750px; color:#111; }
