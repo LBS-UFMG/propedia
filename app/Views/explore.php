@@ -5,7 +5,7 @@
    .hidden{
       visibility:hidden;
       height: 0;
-      padding:0;
+      padding:0 !important;
    }
 </style>
 
@@ -125,7 +125,7 @@
 
 </div>
 
-<p class="text-center"><button class="btn border btn-light active" id="adv_search_button">Advanced search ▲</a></button>
+<p class="text-center"><button class="btn border btn-light" id="adv_search_button">Advanced search ▲</a></button>
    <script>
       window.onload = function() {
 
