@@ -272,7 +272,7 @@
 <div id="explore">
     <div class="container">
         <h2><strong>Complex samples</strong></h2>
-        <table id="dt_complex_home" class="table table-striped table-hover" style="width:100%; ">
+        <table id="dt_complex_home" class="table table-striped table-hover table-sm small" style="width:100%; ">
             <thead>
                 <tr class="tableheader">
                     <th class="dt-center">Complex<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="PDB - peptide chain - receptor chain">?</a></sup></th>

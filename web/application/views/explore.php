@@ -184,7 +184,7 @@
       </div>
 
       <div class="row">
-         <table id="dt_complex_explore" class="table table-striped  table-hover">
+         <table id="dt_complex_explore" class="table table-striped table-hover table-sm small">
             <thead>
                <tr class="tableheader">
                   <th class="dt-center">Complex<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="PDB - peptide chain - protein chain">?</a></sup></th>
