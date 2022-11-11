@@ -16,38 +16,57 @@
       </div>
    </div>
 </footer>
+
+
+
 <!-- MODAL -->
 <div class="modal fade" tabindex="-1" id="about" role="dialog">
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div style="text-align: center">
-               <img src="<?php echo base_url(); ?>public/img/logo3.svg">
+               <img src="<?php echo base_url('/img/logo3.svg'); ?>">
             </div>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
          </div>
          <div class="modal-body">
             <div class="row">
+
+              <div class="alert alert-success small">
+                <h5><b>Please, cite: </b></h5>
+                Pedro M. Martins, Lucianna H. Santos, Diego Mariano, Felippe C. Queiroz, Luana L. Bastos, Isabela de S. Gomes, Pedro H. C. Fischer, Rafael E. O. Rocha, Sabrina A. Silveira, Leonardo H. F. de Lima, Mariana T. Q. de Magalhães, Maria G. A. Oliveira & Raquel C. de Melo-Minardi (2021). <b>Propedia: a database for protein–peptide identification based on a hybrid clustering algorithm. </b>Bioinformatics, 22(1), 1-20.</div>
                <div class="col-md-7">
                   <p style="padding-top:10px">
                      <strong>Designed by: </strong><br>
-                     <a href="#" target="_blank">MSc Pedro Martins</a><br>
-                     <a href="#" target="_blank">Dr. Lucianna H. Santos</a><br>
-                     <a href="http://diegomariano.com" target="_blank">Dr. Diego Mariano</a><br>
-                     <a href="http://www.dcc.ufmg.br/~raquelcm" target="_blank">Prof. Dr. Raquel de Melo-Minardi</a><br><br>
+                     <a href="#" target="_blank">Dr Pedro Martins</a><br>
+                     <a href="#" target="_blank">Dr Lucianna H. Santos</a><br>
+                     <a href="http://diegomariano.com" target="_blank">Dr Diego Mariano</a><br>
+                     <a href="http://www.dcc.ufmg.br/~raquelcm" target="_blank">Prof. Dr Raquel de Melo-Minardi</a><br><br>
                      <strong>Back-end: </strong><br>
-                     <a href="#" target="_blank">MSc Pedro Martins</a><br><br>
+                     <a href="#" target="_blank">Dr Pedro Martins</a><br><br>
                      <strong>Front-end: </strong><br>
-                     <a href="#" target="_blank">MSc Pedro Martins / Dr. Diego Mariano</a><br>
+                     <a href="#" target="_blank">Dr Pedro Martins / Dr Diego Mariano</a><br>
                      <a href="https://www.freepik.com/free-photos-vectors/business">Business vector created by freepik - www.freepik.com</a><br><br>
                      <strong>Financing and support: </strong><br>
                      <a href="http://www.capes.gov.br" target="_blank">CAPES</a> / <a href="http://ufmg.br" target="_blank">UFMG</a> / <a href="http://bioinfo.dcc.ufmg.br" target="_blank">LBS</a><br><br>
                   </p>
                </div>
+               <div class="col-5">
+                <h5>Propedia v2.3</h5>
+                <p class="text-muted">Update log</p>
+                <ul class="small">
+                  <li>Protein-peptide complexes updated</li>
+                  <li>Clustering method based on structural signatures included</li>
+                  <li>New navigation resource add: browse by specific datasets</li>
+                  <li>Performance improvements</li>
+                  <li>Back-end: PHP 8 support added</li>
+                  <li>Front-end: Bootstrap 5 support added</li>
+                </ul>
+               </div>
             </div>
          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
          </div>
       </div>
       <!-- /.modal-content -->
@@ -55,15 +74,17 @@
    <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+
 <div class="modal fade" tabindex="-1" id="blast" role="dialog">
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <form id="form_blast_run" action="<?php echo base_url(); ?>search/sequence" method="post" enctype="multipart/form-data">
             <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                <div>
                   <h3><b>Search for similar sequences</b></h3>
                </div>
+               <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
             </div>
             <div class="modal-body">
                <div class="row">
@@ -86,7 +107,7 @@
             </div>
             <div class="modal-footer">
                <input type="submit" class="btn btn-success" value="Run BLAST">
-               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               <button type="button" class="btn btn-light " data-bs-dismiss="modal">Cancel</button>
             </div>
          </form>
       </div>
@@ -96,10 +117,11 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div>
                <h3><b>Tutorial</b></h3>
             </div>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
          </div>
          <div class="modal-body">
             <div class="row">
@@ -115,7 +137,7 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div>
                <h3><b>Download</b></h3>
             </div>
@@ -167,7 +189,7 @@
                         <button id="btn_download_modal" type="button" class="btn btn-success btn-block">Download</button>
                      </div>
                      <div class="col-md-12 col-sm-12">
-                        <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-light  btn-block" data-bs-dismiss="modal">Cancel</button>
                      </div>
                   </div>
                </div>
@@ -185,10 +207,11 @@
       <div class="modal-content">
          <form id="form_probis_run" action="<?php echo base_url(); ?>search/binding" method="post" enctype="multipart/form-data">
             <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                <div>
                   <h3><b>Search for similar binding sites</b></h3>
                </div>
+               <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
             </div>
             <div class="modal-body">
                <div id="3DmolViewer" style="min-height: 400px; margin:10px 0; width: 100%;"></div>
@@ -246,10 +269,10 @@
                      </div>
                      <h4><b>Search scope</b></h4>
                      <label class="radio-inline">
-                     <input type="radio" name="scope" value="ccd" checked>Only CCD <sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Search in <?=number_format($ccd_number)?> complex of Clustered Complex Dataset (faster).">?</a></sup>
+                     <input type="radio" name="scope" value="ccd" checked>Only CCD <sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Search in <?=number_format($ccd_number)?> complex of Clustered Complex Dataset (faster).">?</a></sup>
                      </label>                               
                      <label class="radio-inline">
-                     <input type="radio" name="scope" value="all">Whole database <sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Search in <?=number_format($complex_number)?> complex (slower).">?</a></sup>
+                     <input type="radio" name="scope" value="all">Whole database <sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Search in <?=number_format($complex_number)?> complex (slower).">?</a></sup>
                      </label>                  
                      <div hidden id="feedback_probis" class="alert alert-danger" role="alert">
                         PDB file and residue list cannot by empty!
@@ -259,7 +282,7 @@
             </div>
             <div class="modal-footer">
                <input id="run_probis_btn" type="submit" class="btn btn-success" value="Run ProBiS NOW" style="display: none;">
-               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               <button type="button" class="btn btn-light " data-bs-dismiss="modal">Cancel</button>
             </div>
          </form>
       </div>
