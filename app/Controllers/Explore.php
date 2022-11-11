@@ -30,7 +30,8 @@ class Explore extends BaseController
       )
     );
 
-    $this->template->show("explore", $data);
+    return view('explore',$data);
+    // $this->template->show("explore", $data);
   }
 
   // AJAX REQUESTS 
