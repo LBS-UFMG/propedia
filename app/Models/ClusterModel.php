@@ -187,10 +187,11 @@ class ClusterModel extends Model {
 	public static function get_cluster_numbers() {
 
 		$db = \Config\Database::connect();
-		$query   = $db->query('SELECT * FROM cluster_sequence');
+
+		$builder = $db->table('cluster_sequence');
 
 
-
+$query = $builder->get();
 dd($query);
 
 // $builder->from('mytable');
