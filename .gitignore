@@ -29,3 +29,5 @@ web/application/config/database.php
 beta_version/vendor
 beta_version/.env
 beta_version/writable/logs/*
+
+.DS_Store
