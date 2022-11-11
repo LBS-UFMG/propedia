@@ -26,7 +26,7 @@ class Explore extends CI_Controller{
             "groups" => $groups,            
             "complex_list" => $complex_list,            
             "scripts" => array(
-                #"all_datatable_buttons_requires",
+                "all_datatable_buttons_requires",
                 "explore.js"
             )
         );

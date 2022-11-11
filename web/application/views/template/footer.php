@@ -25,7 +25,7 @@
       <div class="modal-content">
          <div class="modal-header">
             <div style="text-align: center">
-               <img src="<?php echo base_url('/img/logo3.svg'); ?>">
+               <img src="<?php echo base_url('public/img/logo3.svg'); ?>">
             </div>
             <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
          </div>
