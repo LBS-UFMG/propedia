@@ -30,11 +30,11 @@
       <div class="card p-2" style="border-left: #5cb85c 5px solid; color: #ccc">
         <div class="caption">
           <div class="row">
-            <div class="col-md-4 text-success" style="font-size: 90px">
+            <div class="col-md-4 text-success" style="font-size: 72px">
               <i class="fas fa-database"></i>
             </div>
             <div class="col-md-8 text-end">
-              <h1>
+              <h1 class="mt-3">
                 <strong>
                   <a class="text-success" href="<?php echo base_url('/explore'); ?>">
                     <?=number_format($complex_number)?>
@@ -51,7 +51,7 @@
       <div class="card p-2" style="border-left: #5cb85c 5px solid; color: #ccc">
         <div class="caption">
           <div class="row">
-            <div class="col-md-4 text-success" style="font-size: 90px">
+            <div class="col-md-4 text-success" style="font-size: 72px">
               <i class="fas fa-font"></i>
             </div>
             <div class="col-md-8 text-end">
@@ -69,12 +69,12 @@
       <div class="card p-2" style="border-left: #5cb85c 5px solid; color: #ccc">
         <div class="caption">
           <div class="row">
-            <div class="col-md-4 text-success" style="font-size: 90px">
+            <div class="col-md-4 text-success" style="font-size: 72px">
               <i class="fas fa-bacon"></i>
             </div>
             <div class="col-md-8 text-end">
-              <h1><strong><a class="text-success" href="<?php echo base_url('/cluster/interface'); ?>">
-                    </ /?=number_format($cluster_info["number_cluster_interface"])?>
+            <h1 class="mt-3"><strong><a class="text-success" href="<?php echo base_url('/cluster/interface'); ?>">
+                    <?=number_format($cluster_info["number_cluster_interface"])?>
                   </a></strong>
               </h1>
               <p class="text-muted"><strong>INTERFACE CLUSTERS</strong></p>
@@ -87,12 +87,12 @@
       <div class="card p-2" style="border-left: #5cb85c 5px solid; color: #ccc">
         <div class="caption">
           <div class="row">
-            <div class="col-md-4 text-success" style="font-size: 90px">
+            <div class="col-md-4 text-success" style="font-size: 72px">
               <i class="fab fa-hubspot"></i>
             </div>
             <div class="col-md-8 text-end">
-              <h1><strong><a class="text-success" href="<?php echo base_url('/cluster/binding'); ?>">
-                    </ /?=number_format($cluster_info["number_cluster_binding"])?>
+              <h1 class="mt-3"><strong><a class="text-success" href="<?php echo base_url('/cluster/binding'); ?>">
+                    <<h1 class="mt-3">?=number_format($cluster_info["number_cluster_binding"])?>
                   </a></strong>
               </h1>
               <p class="text-muted"><strong>BINDING SITE CLUSTERS</strong></p>
@@ -165,7 +165,7 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 90px" class="fab fa-cloudsmith"></i>
+                    <i style="font-size: 72px" class="fab fa-cloudsmith"></i>
                     <p class="text-muted">PROPEDIA<br><strong>ANTIMICROBIAL</strong>DB</p>
                   </div>
                 </div>
@@ -178,7 +178,7 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 90px" class="fas fa-fire"></i>
+                    <i style="font-size: 72px" class="fas fa-fire"></i>
                     <p class="text-muted">PROPEDIA<br><strong>VIRAL</strong>DB</p>
                   </div>
                 </div>
@@ -192,7 +192,7 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 90px" class="fas fa-ban"></i>
+                    <i style="font-size: 72px" class="fas fa-ban"></i>
                     <p class="text-muted">PROPEDIA<br><strong>ENZYME</strong>DB</p>
                   </div>
                 </div>
@@ -205,7 +205,7 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 90px" class="fas fa-water"></i>
+                    <i style="font-size: 72px" class="fas fa-water"></i>
                     <p class="text-muted">PROPEDIA<br><strong>TRANSCRIPTION</strong>DB</p>
                   </div>
                 </div>
@@ -217,7 +217,7 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 90px" class="fas fa-atom"></i>
+                    <i style="font-size: 72px" class="fas fa-atom"></i>
                     <p class="text-muted"><br><strong>OTHERS</strong></p>
                   </div>
                 </div>
@@ -230,7 +230,7 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 90px" class="fas fa-venus-mars"></i>
+                    <i style="font-size: 72px" class="fas fa-venus-mars"></i>
                     <p class="text-muted">PROPEDIA<br><strong>HORMONE</strong>DB</p>
                   </div>
                 </div>
@@ -243,7 +243,7 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 90px" class="fas fa-skull-crossbones"></i>
+                    <i style="font-size: 72px" class="fas fa-skull-crossbones"></i>
                     <p class="text-muted">PROPEDIA<br><strong>TOXIN</strong>DB</p>
                   </div>
                 </div>
@@ -256,7 +256,7 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 90px" class="fas fa-brain"></i>
+                    <i style="font-size: 72px" class="fas fa-brain"></i>
                     <p class="text-muted">PROPEDIA<br><strong>NEUROPEPTIDE</strong>DB</p>
                   </div>
                 </div>
