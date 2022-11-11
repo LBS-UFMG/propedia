@@ -10,7 +10,7 @@ class ComplexModel extends Model {
 		$db = db_connect();
 	}
 
-	public function get_complex_number($CCD=FALSE) {
+	public static function get_complex_number($CCD=FALSE) {
 
 		$conexao = \Config\Database::connect();
 
