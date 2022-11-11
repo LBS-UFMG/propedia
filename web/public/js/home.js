@@ -1,5 +1,5 @@
 $(function() {
-
+console.log(BASE_URL + "index.php/explore/ajax_list_complex")
 	var num_complexes = 17564;
 	var length = 10;
 	var rand = Array.from({length: length}, () => Math.floor(Math.random() * num_complexes)).toString();
