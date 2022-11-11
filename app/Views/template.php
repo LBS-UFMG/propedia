@@ -451,26 +451,22 @@
         <script src="<?php echo base_url('/js/font_awesome_5.js'); ?>"></script>
         
 
-        <?php if (isset($scripts)) {
-            foreach ($scripts as $script_name) {
-                if ($script_name == "all_datatable_buttons_requires") {?>
-        <!-- DATATABLE'S BUTTONS REQUIRED SCRIPTS -->
-        <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
-        <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-        <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
-        <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
-                <?php
-                } else {
-                    $src = base_url() . "public/js/" . $script_name; ?>
-        <script src="<?=$src?>"></script>
-                <?php }
-             }
-        } ?>
-
-
+        <?php if(isset($scripts)): ?>
+            <?php foreach ($scripts as $script_name): ?>
+               <?php if ($script_name == "all_datatable_buttons_requires"): ?>
+                  <!-- DATATABLE'S BUTTONS REQUIRED SCRIPTS -->
+                  <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+                  <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+                  <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+                  <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+               <?php else: ?>
+                  <script src="<?=base_url("/js/$script_name")?>"></script>
+               <?php endif; ?>
+            <?php endforeach; ?>
+         <?php endif; ?>
 
     <!-- <script src="<?=base_url('/js/main.js')?>"></script>principal script -->
     <!-- FIM Scripts -->
