@@ -8,7 +8,8 @@ class Home extends BaseController{
     public function index(){
         
         $clusters = new ClusterModel();
-        $x = $clusters->get_cluster_numbers();
+        // $x = $clusters->get_cluster_numbers();
+        $x = ClusterModel::get_cluster_numbers();
 
         dd($x);
         // $this->load->model("cluster_model");

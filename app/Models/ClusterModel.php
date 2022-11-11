@@ -7,6 +7,8 @@ use CodeIgniter\Database\ConnectionInterface;
 
 class ClusterModel extends Model {
 	
+	protected $db;
+
 	public function __construct() {
 		$this->db = \Config\Database::connect();
 	}
@@ -182,14 +184,24 @@ class ClusterModel extends Model {
 		return $this->db->get()->result();
 	}
 
-	public function get_cluster_numbers() {
+	public static function get_cluster_numbers() {
+
+		$db = \Config\Database::connect();
+		$query   = $db->query('SELECT * FROM cluster_sequence');
+
+
+
+dd($query);
+
+// $builder->from('mytable');
+
 
 		$db = $this->db->table('cluster_sequence');
-
 		$db->select("count(distinct cluster_num) as number_cluster_sequence");
-		$db->from("cluster_sequence");
-		$number_cluster_sequence = $db->get()->getRow()->number_cluster_sequence;
-		return $number_cluster_sequence;
+
+		// $db->from("cluster_sequence");
+		$number_cluster_sequence = $db->get();
+		dd($number_cluster_sequence);
 		exit();
 		$db->select("count(cluster_num) number_singletons_sequence");
 		$db->from("cluster_sequence");
