@@ -22,7 +22,7 @@ class ComplexModel extends Model {
 		$db = $conexao->table('complex');
 
 		$db->select("count(id_complex) complex_number");
-		$db->from("complex");
+
 		if ($CCD) {
 			$db->where("is_ccd", "1");
 		}
