@@ -25,7 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $cmd = explode("/", getcwd());
-$server = end($cmd);
+// $server = end($cmd);
+$server = 'propedia2';
 $config['base_url'] = "http://bioinfo.dcc.ufmg.br/" . $server . "/";
 
 /*
