@@ -104,9 +104,9 @@
    <div class="col-md-2 col-sm-2">
       <button id="clear_filters" type="reset" class="btn btn-default">Clear filter</button>            
    </div>
-   <div class="col-md-offset-8 col-md-2 col-sm-2">
-      <button id="apply_filter" type="button" class="btn btn-primary d-block">Apply filter&nbsp;<i class="fas fa-filter"></i></button>
-      <p class="text-success text-right hidden" id="filter_applied">Filter applied.</p>
+   <div class="offset-8 col-md-2 col-sm-2">
+      <button id="apply_filter" type="button" class="btn btn-primary w-100">Apply filter&nbsp;<i class="fas fa-filter"></i></button>
+      <p class="text-success text-end" style="visibility:hidden" id="filter_applied">Filter applied.</p>
    </div>
 <!--
 <div class="col-md-2 col-sm-2 col-md-offset-6 col-sm-offset-6">
