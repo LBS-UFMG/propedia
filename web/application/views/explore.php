@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
    <div id="advanced_search" class="thumbnail" style="border-left: #ccc 5px solid; background-color:#eee; color: #ccc; margin-bottom: 0">
       <div class="caption"> 
          <div class="row">

@@ -21,7 +21,7 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div style="text-align: center">
                <img src="<?php echo base_url(); ?>public/img/logo3.svg">
             </div>
@@ -47,7 +47,7 @@
             </div>
          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
          </div>
       </div>
       <!-- /.modal-content -->
@@ -60,7 +60,7 @@
       <div class="modal-content">
          <form id="form_blast_run" action="<?php echo base_url(); ?>search/sequence" method="post" enctype="multipart/form-data">
             <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                <div>
                   <h3><b>Search for similar sequences</b></h3>
                </div>
@@ -86,7 +86,7 @@
             </div>
             <div class="modal-footer">
                <input type="submit" class="btn btn-success" value="Run BLAST">
-               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
             </div>
          </form>
       </div>
@@ -96,7 +96,7 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div>
                <h3><b>Tutorial</b></h3>
             </div>
@@ -115,7 +115,7 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div>
                <h3><b>Download</b></h3>
             </div>
@@ -167,7 +167,7 @@
                         <button id="btn_download_modal" type="button" class="btn btn-success btn-block">Download</button>
                      </div>
                      <div class="col-md-12 col-sm-12">
-                        <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-default btn-block" data-bs-dismiss="modal">Cancel</button>
                      </div>
                   </div>
                </div>
@@ -185,7 +185,7 @@
       <div class="modal-content">
          <form id="form_probis_run" action="<?php echo base_url(); ?>search/binding" method="post" enctype="multipart/form-data">
             <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                <div>
                   <h3><b>Search for similar binding sites</b></h3>
                </div>
@@ -246,10 +246,10 @@
                      </div>
                      <h4><b>Search scope</b></h4>
                      <label class="radio-inline">
-                     <input type="radio" name="scope" value="ccd" checked>Only CCD <sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Search in <?=number_format($ccd_number)?> complex of Clustered Complex Dataset (faster).">?</a></sup>
+                     <input type="radio" name="scope" value="ccd" checked>Only CCD <sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Search in <?=number_format($ccd_number)?> complex of Clustered Complex Dataset (faster).">?</a></sup>
                      </label>                               
                      <label class="radio-inline">
-                     <input type="radio" name="scope" value="all">Whole database <sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Search in <?=number_format($complex_number)?> complex (slower).">?</a></sup>
+                     <input type="radio" name="scope" value="all">Whole database <sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Search in <?=number_format($complex_number)?> complex (slower).">?</a></sup>
                      </label>                  
                      <div hidden id="feedback_probis" class="alert alert-danger" role="alert">
                         PDB file and residue list cannot by empty!
@@ -259,7 +259,7 @@
             </div>
             <div class="modal-footer">
                <input id="run_probis_btn" type="submit" class="btn btn-success" value="Run ProBiS NOW" style="display: none;">
-               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
             </div>
          </form>
       </div>
