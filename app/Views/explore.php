@@ -125,7 +125,7 @@
 
 </div>
 
-<p class="text-center"><button class="btn border btn-light" id="adv_search_button">Advanced search ▲</a></button>
+<p class="text-center"><button class="btn border btn-light w-100" id="adv_search_button">Advanced search ▲</a></button>
    <script>
       window.onload = function() {
 
@@ -168,21 +168,22 @@
       </div>
 
       <div class="row">
-         <div class="col-md-4 col-sm-12">
-            <a id="btn_download_sequence_centroid" class="btn btn-success btn-block" href="#" data-toggle="modal" data-target="#modal_download_selected">Download sequence centroids&nbsp;<i class="fas fa-font"></i></a>
+         <div class="col-md-3 col-sm-12">
+            <a id="btn_download_sequence_centroid" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download sequence centroids&nbsp;<i class="fas fa-font"></i></a>
          </div>
-         <div class="col-md-4 col-sm-12">
-            <a id="btn_download_interface_centroid" class="btn btn-danger btn-block" href="#" data-toggle="modal" data-target="#modal_download_selected">Download interface centroids&nbsp;<i class="fas fa-bacon"></i></a>
+
+         <div class="col-md-3 col-sm-12">
+            <a id="btn_download_interface_centroid" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download interface centroids&nbsp;<i class="fas fa-bacon"></i></a>
          </div>
-         <div class="col-md-4 col-sm-12">
-            <a id="btn_download_binding_centroid" class="btn btn-primary btn-block" href="#" data-toggle="modal" data-target="#modal_download_selected">Download binding centroids&nbsp;<i class="fab fa-hubspot"></i></a>
+
+         <div class="col-md-3 col-sm-12">
+            <a id="btn_download_binding_centroid" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download binding centroids&nbsp;<i class="fab fa-hubspot"></i></a>
          </div>
-      </div>
-      <br>
-      <div class="row">
-         <div class="col-md-12 col-sm-12">
-            <a id="btn_download_selected" class="btn btn-info btn-block" href="#" data-toggle="modal" data-target="#modal_download_selected">Download complex&nbsp;<i class="fas fa-download"></i></a>
+
+         <div class="col-md-3 col-sm-12">
+            <a id="btn_download_selected" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download complex&nbsp;<i class="fas fa-download"></i></a>
          </div>
+
       </div>
 
       <div class="row">
