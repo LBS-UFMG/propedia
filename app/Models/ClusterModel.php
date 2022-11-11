@@ -192,7 +192,7 @@ class ClusterModel extends Model {
 		$db->select("count(distinct cluster_num) as number_cluster_sequence");
 		// $db->limit(1);
 		$query = $db->get();
-		$number_cluster_sequence = $query->getResult();
+		$number_cluster_sequence = $query->getResult()[0]->number_cluster_sequence;
 		dd($number_cluster_sequence);
 
 
