@@ -160,14 +160,11 @@
       
       <div class="row">
          <div class="col-md-10 col-sm-12">
-            <h2>Explore <a class="btn" id="dupli">hide duplicates PDB</a></h2>
+            <h2>Explore <a class="btn btn-light btn-sm" id="dupli">hide duplicates PDB</a></h2>
          </div>
-         <!--<div class="col-md-2 col-sm-12">
-            <input id="datatable_id" value="dt_complex_explore" hidden></input>            
-         </div>-->
       </div>
 
-      <div class="row">
+      <div class="row mb-2">
          <div class="col-md-3 col-sm-12">
             <a id="btn_download_sequence_centroid" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download sequence centroids&nbsp;<i class="fas fa-font"></i></a>
          </div>

@@ -39,6 +39,7 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/explore', 'Explore::index');
 $routes->post('/explore', 'Explore::index');
+$routes->get('/explore/ajax_list_complex', 'Explore::ajax_list_complex');
 
 $routes->get('/download', 'Download::index');
 $routes->get('/search', 'Search::index');
