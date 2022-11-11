@@ -1,6 +1,12 @@
 <?= $this->extend('template') ?>
 <?= $this->section('conteudo') ?>
 
+<style>
+   .hidden{
+      visibility:hidden;
+   }
+</style>
+
 <div class="container-fluid">
    <div id="advanced_search" class="card p-3 small" style="border-left: #ccc 5px solid; background-color:#eee; color: #ccc; margin-bottom: 0">
       <div class="caption"> 
@@ -106,7 +112,7 @@
    </div>
    <div class="offset-8 col-md-2 col-sm-2">
       <button id="apply_filter" type="button" class="btn btn-primary w-100">Apply filter&nbsp;<i class="fas fa-filter"></i></button>
-      <p class="text-success text-end" style="visibility:hidden" id="filter_applied">Filter applied.</p>
+      <p class="text-success text-end mb-0 pb-0 hidden" id="filter_applied">Filter applied.</p>
    </div>
 <!--
 <div class="col-md-2 col-sm-2 col-md-offset-6 col-sm-offset-6">
