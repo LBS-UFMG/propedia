@@ -199,7 +199,6 @@ class ClusterModel extends Model {
 
 		$db = $conexao->table('cluster_interface');
 		$db->select("count(distinct cluster_num) as number_cluster_interface");
-		$db->from("cluster_interface");
 		$number_cluster_interface = $db->get()->getResult()[0]->number_cluster_interface;
 
 		$db = $conexao->table('cluster_interface');
