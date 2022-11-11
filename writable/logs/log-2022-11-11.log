@@ -1,0 +1,188 @@
+CRITICAL - 2022-11-11 11:29:13 --> Undefined variable $cluster
+in APPPATH/Controllers/Home.php on line 11.
+ 1 APPPATH/Controllers/Home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cluster', 'APPPATH/Controllers/Home.php', 11)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 11:29:14 --> Undefined variable $cluster
+in APPPATH/Controllers/Home.php on line 11.
+ 1 APPPATH/Controllers/Home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cluster', 'APPPATH/Controllers/Home.php', 11)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-11 11:29:23 --> Undefined variable $cluster
+in APPPATH/Controllers/Home.php on line 11.
+ 1 APPPATH/Controllers/Home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cluster', 'APPPATH/Controllers/Home.php', 11)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 11:30:28 --> Error connecting to the database: mysqli_sql_exception: Operation timed out in /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('150.164.203.91', 'propedia_webuse...', 'Pr0p3di@rule5*', 'propedia', 3306, '', 0)
+#1 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(di...', Array, false)
+#4 /Users/diego/Documents/GitHub/propedia/app/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/diego/Documents/GitHub/propedia/app/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+#6 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/diego/Documents/GitHub/propedia/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Users/diego/Do...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Operation timed out in /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(di...', Array, false)
+#3 /Users/diego/Documents/GitHub/propedia/app/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/diego/Documents/GitHub/propedia/app/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+#5 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/diego/Documents/GitHub/propedia/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Users/diego/Do...')
+#10 {main}
+CRITICAL - 2022-11-11 11:30:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Operation timed out
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(distinct cluster_num) as number_cluster_sequence
+FROM `cluster_sequence`, `cluster_sequence`', [], false)
+ 3 APPPATH/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 11:30:40 --> Error connecting to the database: mysqli_sql_exception: Operation timed out in /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('150.164.203.91', 'propedia_webuse...', 'Pr0p3di@rule5*', 'propedia', 3306, '', 0)
+#1 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(di...', Array, false)
+#4 /Users/diego/Documents/GitHub/propedia/app/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/diego/Documents/GitHub/propedia/app/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+#6 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/diego/Documents/GitHub/propedia/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Users/diego/Do...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Operation timed out in /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(di...', Array, false)
+#3 /Users/diego/Documents/GitHub/propedia/app/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/diego/Documents/GitHub/propedia/app/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+#5 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/diego/Documents/GitHub/propedia/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Users/diego/Do...')
+#10 {main}
+CRITICAL - 2022-11-11 11:30:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Operation timed out
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(distinct cluster_num) as number_cluster_sequence
+FROM `cluster_sequence`, `cluster_sequence`', [], false)
+ 3 APPPATH/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 11:32:11 --> Error connecting to the database: mysqli_sql_exception: Operation timed out in /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('150.164.203.91', 'propedia_webuse...', 'Pr0p3di@rule5*', 'propedia', 3306, '', 0)
+#1 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(di...', Array, false)
+#4 /Users/diego/Documents/GitHub/propedia/app/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/diego/Documents/GitHub/propedia/app/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+#6 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/diego/Documents/GitHub/propedia/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Users/diego/Do...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Operation timed out in /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(di...', Array, false)
+#3 /Users/diego/Documents/GitHub/propedia/app/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/diego/Documents/GitHub/propedia/app/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+#5 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/diego/Documents/GitHub/propedia/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Users/diego/Do...')
+#10 {main}
+CRITICAL - 2022-11-11 11:32:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Operation timed out
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(distinct cluster_num) as number_cluster_sequence
+FROM `cluster_sequence`, `cluster_sequence`', [], false)
+ 3 APPPATH/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-11 11:32:35 --> Error connecting to the database: mysqli_sql_exception: Operation timed out in /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('150.164.203.91', 'propedia_webuse...', 'Pr0p3di@rule5*', 'propedia', 3306, '', 0)
+#1 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(di...', Array, false)
+#4 /Users/diego/Documents/GitHub/propedia/app/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/diego/Documents/GitHub/propedia/app/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+#6 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/diego/Documents/GitHub/propedia/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Users/diego/Do...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Operation timed out in /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(di...', Array, false)
+#3 /Users/diego/Documents/GitHub/propedia/app/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/diego/Documents/GitHub/propedia/app/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+#5 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/diego/Documents/GitHub/propedia/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/diego/Documents/GitHub/propedia/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/Users/diego/Do...')
+#10 {main}
+CRITICAL - 2022-11-11 11:32:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Operation timed out
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(distinct cluster_num) as number_cluster_sequence
+FROM `cluster_sequence`, `cluster_sequence`', [], false)
+ 3 APPPATH/Models/ClusterModel.php(191): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(11): App\Models\ClusterModel->get_cluster_numbers()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
