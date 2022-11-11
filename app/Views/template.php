@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Propedia v2.3</title>
+  <title>Propedia v2.3 - A database of peptide-protein interactions</title>
 
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="<?=base_url('/css/all.min.css')?>">
 
-  <link rel="stylesheet" href="<?=base_url('/css/buttons.datatables.min.css')?>">
-
-  <link rel="stylesheet" href="<?=base_url('/css/estilo.css')?>">
+  <!-- <link rel="stylesheet" href="<?=base_url('/css/buttons.datatables.min.css')?>"> -->
 
   <link rel="icon" type="image/png" href="<?php echo base_url('/img/favicon/android-icon-192x192.png'); ?>">
 
@@ -28,9 +25,10 @@
   </script>
 
     <link rel="stylesheet" href="<?php echo base_url('/css/jquery-ui.css'); ?>">    
-    <link rel="stylesheet" href="<?php echo base_url('public/css/all.min.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('/css/estilo.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('/css/all.min.css'); ?>">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('/css/estilo.css'); ?>"> -->
     <link rel="stylesheet" href="<?php echo base_url('/css/style.css'); ?>">
+
 </head>
 <body>
   <header class="bg-success">
@@ -48,8 +46,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a style="color:#333;" href="#" data-toggle="modal" data-target="#blast">by Sequence</a></li>
-                <li><a style="color:#333;" href="#" data-toggle="modal" data-target="#probis">by Binding Site</a></li>
+                <li><a style="color:#333;" href="#" data-bs-toggle="modal" data-bs-target="#blast">by Sequence</a></li>
+                <li><a style="color:#333;" href="#" data-bs-toggle="modal" data-bs-target="#probis">by Binding Site</a></li>
               </ul>
             </li>
 
@@ -122,13 +120,13 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hid
+          <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hid
   den="true">&times;</span></button>
           <h4 class="modal-title"><strong>LBS I.T. Team</strong></h4>
         </div>
               
         <div class="modal-body">
-          <p style="text-align:center; padding:20px"><img src="<?=base_url('app/img/logo3.svg');?>"></
+          <p style="text-align:center; padding:20px"><img src="<?=base_url('/img/logo3.svg');?>"></
   p>
           <h1 style="text-align:center">LBS I.T. TEAM</h1>						
           <strong>Admin: </strong>Pedro Martins<br><br>
@@ -153,28 +151,45 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div style="text-align: center">
-               <img src="<?php echo base_url('public/img/logo3.svg'); ?>">
+               <img src="<?php echo base_url('/img/logo3.svg'); ?>">
             </div>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
          </div>
          <div class="modal-body">
             <div class="row">
+
+              <div class="alert alert-success small">
+                <h5><b>Please, cite: </b></h5>
+                Pedro M. Martins, Lucianna H. Santos, Diego Mariano, Felippe C. Queiroz, Luana L. Bastos, Isabela de S. Gomes, Pedro H. C. Fischer, Rafael E. O. Rocha, Sabrina A. Silveira, Leonardo H. F. de Lima, Mariana T. Q. de Magalhães, Maria G. A. Oliveira & Raquel C. de Melo-Minardi (2021). <b>Propedia: a database for protein–peptide identification based on a hybrid clustering algorithm. </b>Bioinformatics, 22(1), 1-20.</div>
                <div class="col-md-7">
                   <p style="padding-top:10px">
                      <strong>Designed by: </strong><br>
-                     <a href="#" target="_blank">MSc Pedro Martins</a><br>
-                     <a href="#" target="_blank">Dr. Lucianna H. Santos</a><br>
-                     <a href="http://diegomariano.com" target="_blank">Dr. Diego Mariano</a><br>
-                     <a href="http://www.dcc.ufmg.br/~raquelcm" target="_blank">Prof. Dr. Raquel de Melo-Minardi</a><br><br>
+                     <a href="#" target="_blank">Dr Pedro Martins</a><br>
+                     <a href="#" target="_blank">Dr Lucianna H. Santos</a><br>
+                     <a href="http://diegomariano.com" target="_blank">Dr Diego Mariano</a><br>
+                     <a href="http://www.dcc.ufmg.br/~raquelcm" target="_blank">Prof. Dr Raquel de Melo-Minardi</a><br><br>
                      <strong>Back-end: </strong><br>
-                     <a href="#" target="_blank">MSc Pedro Martins</a><br><br>
+                     <a href="#" target="_blank">Dr Pedro Martins</a><br><br>
                      <strong>Front-end: </strong><br>
-                     <a href="#" target="_blank">MSc Pedro Martins / Dr. Diego Mariano</a><br>
+                     <a href="#" target="_blank">Dr Pedro Martins / Dr Diego Mariano</a><br>
                      <a href="https://www.freepik.com/free-photos-vectors/business">Business vector created by freepik - www.freepik.com</a><br><br>
                      <strong>Financing and support: </strong><br>
                      <a href="http://www.capes.gov.br" target="_blank">CAPES</a> / <a href="http://ufmg.br" target="_blank">UFMG</a> / <a href="http://bioinfo.dcc.ufmg.br" target="_blank">LBS</a><br><br>
                   </p>
+               </div>
+               <div class="col-5">
+                <h5>Propedia v2.3</h5>
+                <p class="text-muted">Update log</p>
+                <ul class="small">
+                  <li>Protein-peptide complexes updated</li>
+                  <li>Clustering method based on structural signatures included</li>
+                  <li>New navigation resource add: browse by specific datasets</li>
+                  <li>Performance improvements</li>
+                  <li>Inner engine updated to CodeIgniter 4</li>
+                  <li>Back-end: PHP 8 support added</li>
+                  <li>Front-end: Bootstrap 5 support added</li>
+                </ul>
                </div>
             </div>
          </div>
@@ -192,7 +207,7 @@
       <div class="modal-content">
          <form id="form_blast_run" action="<?php echo base_url('search/sequence'); ?>" method="post" enctype="multipart/form-data">
             <div class="modal-header">
-               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                <div>
                   <h3><b>Search for similar sequences</b></h3>
                </div>
@@ -228,7 +243,7 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div>
                <h3><b>Tutorial</b></h3>
             </div>
@@ -247,7 +262,7 @@
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div>
                <h3><b>Download</b></h3>
             </div>
@@ -317,7 +332,7 @@
       <div class="modal-content">
          <form id="form_probis_run" action="<?php echo base_url('search/binding'); ?>" method="post" enctype="multipart/form-data">
             <div class="modal-header">
-               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                <div>
                   <h3><b>Search for similar binding sites</b></h3>
                </div>
@@ -408,20 +423,56 @@
     </script>
 
 
-    <script src="<?=base_url('/js/3dmol.js')?>"></script><!-- principal script -->
+    <!-- <script src="<?=base_url('/js/3dmol.js')?>"></script>principal script -->
 
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
 
-    <script src="<?=base_url('/js/dataTables.buttons.min.js')?>"></script>
+    <!-- <script src="<?=base_url('/js/dataTables.buttons.min.js')?>"></script>
     <script src="<?=base_url('/js/buttons.html5.min.js')?>"></script>
     <script src="<?=base_url('/js/buttons.print.min.js')?>"></script>
     <script src="<?=base_url('/js/jszip.min.js')?>"></script>
     <script src="<?=base_url('/js/pdfmake.min.js')?>"></script>
-    <script src="<?=base_url('/js/vfs_fonts.js')?>"></script>
+    <script src="<?=base_url('/js/vfs_fonts.js')?>"></script> -->
 
 
 
-    <script src="<?=base_url('/js/main.js')?>"></script><!-- principal script -->
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="<?php echo base_url('/js/bootstrap-select.min.js'); ?>"></script>
+
+        <!--<script src="http://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>-->
+        <script src="<?php echo base_url('/js/3Dmol-nojquery.js'); ?>"></script>
+
+        <script src="<?php echo base_url('/js/jquery-ui.js'); ?>"></script>
+        <script src="<?php echo base_url('/js/util.js'); ?>"></script>
+        <script src="<?php echo base_url('/js/d3.v4.min.js'); ?>"></script>
+
+        <script src="<?php echo base_url('/js/font_awesome_5.js'); ?>"></script>
+        
+
+        <?php if (isset($scripts)) {
+            foreach ($scripts as $script_name) {
+                if ($script_name == "all_datatable_buttons_requires") {?>
+        <!-- DATATABLE'S BUTTONS REQUIRED SCRIPTS -->
+        <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+                <?php
+                } else {
+                    $src = base_url() . "public/js/" . $script_name; ?>
+        <script src="<?=$src?>"></script>
+                <?php }
+             }
+        } ?>
+
+
+
+    <!-- <script src="<?=base_url('/js/main.js')?>"></script>principal script -->
     <!-- FIM Scripts -->
 
 </body>

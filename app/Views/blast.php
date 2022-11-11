@@ -1,3 +1,6 @@
+<?= $this->extend('template') ?>
+<?= $this->section('conteudo') ?>
+
 <div class="container-fluid" style="padding: 50px">
 
 	<div id="download">
@@ -123,3 +126,5 @@
     </div>
 </div>
 </div>
+
+<?= $this->endSection() ?>

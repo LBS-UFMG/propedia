@@ -27,16 +27,16 @@
 <div id="info" class="container">
   <div class="row">
     <div class="col-xs-12 col-lg-3">
-      <div class="card p-2" style="border-left: #aa6708 5px solid; color: #ccc">
+      <div class="card p-2" style="border-left: #5cb85c 5px solid; color: #ccc">
         <div class="caption">
           <div class="row">
-            <div class="col-md-4 text-warning" style="font-size: 90px">
+            <div class="col-md-4 text-success" style="font-size: 90px">
               <i class="fas fa-database"></i>
             </div>
             <div class="col-md-8 text-end">
               <h1>
                 <strong>
-                  <a class="text-warning" href="<?php echo base_url('/explore'); ?>">
+                  <a class="text-success" href="<?php echo base_url('/explore'); ?>">
                     </ /?=number_format($complex_number)?>
                   </a>
                 </strong>
@@ -66,14 +66,14 @@
       </div>
     </div>
     <div class="col-xs-12 col-lg-3">
-      <div class="card p-2" style="border-left: #ff1232 5px solid; color: #ccc">
+      <div class="card p-2" style="border-left: #5cb85c 5px solid; color: #ccc">
         <div class="caption">
           <div class="row">
-            <div class="col-md-4 text-danger" style="font-size: 90px">
+            <div class="col-md-4 text-success" style="font-size: 90px">
               <i class="fas fa-bacon"></i>
             </div>
             <div class="col-md-8 text-end">
-              <h1><strong><a class="text-danger" href="<?php echo base_url('/cluster/interface'); ?>">
+              <h1><strong><a class="text-success" href="<?php echo base_url('/cluster/interface'); ?>">
                     </ /?=number_format($cluster_info["number_cluster_interface"])?>
                   </a></strong>
               </h1>
@@ -84,14 +84,14 @@
       </div>
     </div>
     <div class="col-xs-12 col-lg-3">
-      <div class="card p-2" style="border-left: #06A2F7 5px solid; color: #ccc">
+      <div class="card p-2" style="border-left: #5cb85c 5px solid; color: #ccc">
         <div class="caption">
           <div class="row">
-            <div class="col-md-4 text-primary" style="font-size: 90px">
+            <div class="col-md-4 text-success" style="font-size: 90px">
               <i class="fab fa-hubspot"></i>
             </div>
             <div class="col-md-8 text-end">
-              <h1><strong><a class="text-primary" href="<?php echo base_url('/cluster/binding'); ?>">
+              <h1><strong><a class="text-success" href="<?php echo base_url('/cluster/binding'); ?>">
                     </ /?=number_format($cluster_info["number_cluster_binding"])?>
                   </a></strong>
               </h1>
@@ -113,7 +113,7 @@
           <div class="row">
             <div class="col-md-12 p-4">
               <h4 class=""><strong>How to cite:</strong></h4>
-              <p class=" small" id="browse">Pedro M. Martins, Lucianna H. Santos, Diego Mariano, Felippe C. Queiroz, Luana L. Bastos, Isabela de S. Gomes, Pedro H. C. Fischer, Rafael E. O. Rocha, Sabrina A. Silveira, Leonardo H. F. de Lima, Mariana T. Q. de Magalhães, Maria G. A. Oliveira & Raquel C. de Melo-Minardi (2021). <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03881-z">Propedia: a database for protein–peptide identification based on a hybrid clustering algorithm.</a> BMC bioinformatics, 22(1), 1-20.</p>
+              <p class=" small" id="browse">Pedro M. Martins, Lucianna H. Santos, Diego Mariano, Felippe C. Queiroz, Luana L. Bastos, Isabela de S. Gomes, Pedro H. C. Fischer, Rafael E. O. Rocha, Sabrina A. Silveira, Leonardo H. F. de Lima, Mariana T. Q. de Magalhães, Maria G. A. Oliveira & Raquel C. de Melo-Minardi (2021). <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03881-z">Propedia: a database for protein–peptide identification based on a hybrid clustering algorithm.</a> BMC Bioinformatics, 22(1), 1-20.</p>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@
     </div>
   </div>
 </div>
-
+<!-- 
 <div class="container">
   <h2 style="padding: 20px 0 10px 0"><strong>Case Studies</strong>
   </h2>
@@ -133,29 +133,11 @@
     Anti-carsia Protease Inhibitor
     <a href="<?= base_url('search/binding/protease'); ?>" class="btn btn-link">View</a>
   </h4>
-</div>
-
-<!-- HOW TO CITE
-<div class="container" >
-    <div class="row">        
-        <div class="col-xs-12 col-lg-12">
-            <div class="card p-2" style="border-left: #ccc 5px solid; color: #ccc">
-                <div class="caption">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="text-muted"><strong>How to cite:</strong></h4>
-                            <p class="text-muted" id="browse">PROPEDIA, Laboratory of Bioinformatics and Systems, Universidade Federal de Minas Gerais, Brazil.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
+</div> -->
 
 
 <div class="container" id="browse_dataset">
-  <h2 style="padding: 20px 0 10px 0"><strong>Browse specific dataset</strong> <a href="<?= base_url('/explore'); ?>" class="btn btn-outline-primary">View all</a></h2>
+  <h2 class="mt-5 mb-3"><label class="badge bg-success me-2">New</label><strong>Browse by specific datasets</strong> <a href="<?= base_url('/explore'); ?>" class="btn btn-outline-primary">View all</a></h2>
   <p class="lead text-muted">Propedia is composed of many datasets of protein-peptide complexes. You can explore and construct your queries clicking on "View all" button or browse by the most accessed datasets shown below.</p>
 
 
@@ -219,7 +201,7 @@
           </div>
 
           <div class="col-6" onclick="showDataset([67])" title="Click to explore this dataset">
-            <div class="card p-2 specific_db" style="border-left: #ccc 5px solid; color: #ccc">
+            <div class="card p-2 specific_db" style="border-left: #5cb85c 5px solid; color: #ccc">
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
@@ -270,7 +252,7 @@
           </div>
 
           <div class="col-6">
-            <div class="card p-2 specific_db" style="border-left: #ccc 5px solid; color: #ccc">
+            <div class="card p-2 specific_db" style="border-left: gold 5px solid; color: #ccc">
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
@@ -309,7 +291,7 @@
       </tbody>
     </table>
     <br><br>
-    <a class="btn btn-primary btn-lg d-block" href="<?php echo base_url('explore'); ?>" role="button">Show more...</a>
+    <a class="btn btn-outline-success btn-lg d-block" href="<?php echo base_url('explore'); ?>" role="button">Show more...</a>
   </div>
 </div>
 

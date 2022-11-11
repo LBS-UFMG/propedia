@@ -1,34 +1,45 @@
 <?php
 
-class Cluster_model extends Models {
+namespace App\Models;
 
-	public function __construct() {
-		parent::__construct();
-		$this->load->database();
+use CodeIgniter\Model;
+use CodeIgniter\Database\ConnectionInterface;
+
+class ClusterModel extends Model {
+
+	protected $db;
+	public function __construct(ConnectionInterface &$db) {
+		$this->db =& $db;
+	}
+
+	function ClusterModel()
+	{
+		// Chamar o construtor do Model
+		parent::Model();
 	}
 
 	public function get_complex_cluster_list($cluster_type, $cluster_num) {
-		
-		$this->db->select("CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain) AS complex, c.id_complex, SUBSTRING(pdb.title,1, 50) AS title, a.is_centroid");
-		$this->db->from("complex c");
-		$this->db->join("pdb", "pdb.id_pdb = c.id_pdb", "left");
-        $this->db->join("peptide p", "p.id_peptide = c.id_peptide", "left");
-        $this->db->join("receptor r", "r.id_receptor = c.id_receptor", "left");
+
+		$db->select("CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain) AS complex, c.id_complex, SUBSTRING(pdb.title,1, 50) AS title, a.is_centroid");
+		$db->from("complex c");
+		$db->join("pdb", "pdb.id_pdb = c.id_pdb", "left");
+        $db->join("peptide p", "p.id_peptide = c.id_peptide", "left");
+        $db->join("receptor r", "r.id_receptor = c.id_receptor", "left");
 		switch($cluster_type){			
 		    case "sequence":				
-				$this->db->join("cluster_sequence a", "c.id_complex = a.id_complex");
+				$db->join("cluster_sequence a", "c.id_complex = a.id_complex");
 		        break;
 		    case "interface":
-				$this->db->join("cluster_interface a", "c.id_complex = a.id_complex");
+				$db->join("cluster_interface a", "c.id_complex = a.id_complex");
 		        break;
 		    case "binding":
-		        $this->db->join("cluster_binding a", "c.id_complex = a.id_complex");
+		        $db->join("cluster_binding a", "c.id_complex = a.id_complex");
 		        break;
 		}		
-		$this->db->where("a.cluster_num", $cluster_num);
-		$this->db->order_by("a.is_centroid", "DESC");
-		$this->db->order_by("CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain)");
-		return $this->db->get()->result();
+		$db->where("a.cluster_num", $cluster_num);
+		$db->order_by("a.is_centroid", "DESC");
+		$db->order_by("CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain)");
+		return $db->get()->result();
 
 	}
 
@@ -132,80 +143,83 @@ class Cluster_model extends Models {
                       AND a.id_complex1 <> a.id_complex2
     				  $order_by";
         }
-		return $this->db->query($query)->result();
+		return $db->query($query)->result();
 	}
 
 	/*public function get_complex_cetroid_id($cluster_type, $cluster_num) {
 
-		$this->db->select("c.id_complex");
-		$this->db->from("complex c");
+		$db->select("c.id_complex");
+		$db->from("complex c");
 		switch($cluster_type){			
 		    case "sequence":				
-				$this->db->join("cluster_sequence a", "c.id_complex = a.id_complex");
+				$db->join("cluster_sequence a", "c.id_complex = a.id_complex");
 		        break;
 		    case "interface":
-				$this->db->join("cluster_interface a", "c.id_complex = a.id_complex");
+				$db->join("cluster_interface a", "c.id_complex = a.id_complex");
 		        break;
 		    case "binding":
-		        $this->db->join("cluster_binding a", "c.id_complex = a.id_complex");
+		        $db->join("cluster_binding a", "c.id_complex = a.id_complex");
 		        break;
 		}
-		$this->db->where("a.is_centroid", 1);
-		$this->db->where("a.cluster_num", $cluster_num);
-		return $this->db->get()->result();
+		$db->where("a.is_centroid", 1);
+		$db->where("a.cluster_num", $cluster_num);
+		return $db->get()->result();
 	}*/
 
 	public function get_centroid($cluster_type, $cluster_num) {
 		
-		$this->db->select("CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain) AS complex, c.id_complex");
-		$this->db->from("complex c");
-		$this->db->join("pdb", "pdb.id_pdb = c.id_pdb", "left");
-        $this->db->join("peptide p", "p.id_peptide = c.id_peptide", "left");
-        $this->db->join("receptor r", "r.id_receptor = c.id_receptor", "left");
+		$db->select("CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain) AS complex, c.id_complex");
+		$db->from("complex c");
+		$db->join("pdb", "pdb.id_pdb = c.id_pdb", "left");
+        $db->join("peptide p", "p.id_peptide = c.id_peptide", "left");
+        $db->join("receptor r", "r.id_receptor = c.id_receptor", "left");
 		switch($cluster_type){			
 		    case "sequence":				
-				$this->db->join("cluster_sequence a", "c.id_complex = a.id_complex");
+				$db->join("cluster_sequence a", "c.id_complex = a.id_complex");
 		        break;
 		    case "interface":
-				$this->db->join("cluster_interface a", "c.id_complex = a.id_complex");
+				$db->join("cluster_interface a", "c.id_complex = a.id_complex");
 		        break;
 		    case "binding":
-		        $this->db->join("cluster_binding a", "c.id_complex = a.id_complex");
+		        $db->join("cluster_binding a", "c.id_complex = a.id_complex");
 		        break;
 		}
-		$this->db->where("a.is_centroid", 1);
-		$this->db->where("a.cluster_num", $cluster_num);
-		return $this->db->get()->result();
+		$db->where("a.is_centroid", 1);
+		$db->where("a.cluster_num", $cluster_num);
+		return $db->get()->result();
 	}
 
 	public function get_cluster_numbers() {
 
-		$this->db->select("count(distinct cluster_num) as number_cluster_sequence");
-		$this->db->from("cluster_sequence");
-		$number_cluster_sequence = $this->db->get()->first_row()->number_cluster_sequence;
+		$dbtmp      = \Config\Database::connect();
+		$db = $dbtmp->table('cluster_sequence');
 
-		$this->db->select("count(cluster_num) number_singletons_sequence");
-		$this->db->from("cluster_sequence");
-		$this->db->where("cluster_num", -1);
-		$number_singletons_sequence = $this->db->get()->first_row()->number_singletons_sequence;
+		$db->select("count(distinct cluster_num) as number_cluster_sequence");
+		$db->from("cluster_sequence");
+		$number_cluster_sequence = $db->get()->getRow()->number_cluster_sequence;
 
-		$this->db->select("count(distinct cluster_num) as number_cluster_interface");
-		$this->db->from("cluster_interface");
-		$number_cluster_interface = $this->db->get()->first_row()->number_cluster_interface;
+		$db->select("count(cluster_num) number_singletons_sequence");
+		$db->from("cluster_sequence");
+		$db->where("cluster_num", -1);
+		$number_singletons_sequence = $db->get()->getRow()->number_singletons_sequence;
 
-		$this->db->select("count(cluster_num) number_singletons_interface");
-		$this->db->from("cluster_interface");
-		$this->db->where("cluster_num", -1);
-		$number_singletons_interface = $this->db->get()->first_row()->number_singletons_interface;
+		$db->select("count(distinct cluster_num) as number_cluster_interface");
+		$db->from("cluster_interface");
+		$number_cluster_interface = $db->get()->getRow()->number_cluster_interface;
 
-		$this->db->select("count(distinct cluster_num) as number_cluster_binding");
-		$this->db->from("cluster_binding");
-		$number_cluster_binding = $this->db->get()->first_row()->number_cluster_binding;
+		$db->select("count(cluster_num) number_singletons_interface");
+		$db->from("cluster_interface");
+		$db->where("cluster_num", -1);
+		$number_singletons_interface = $db->get()->getRow()->number_singletons_interface;
 
-		$this->db->select("count(cluster_num) number_singletons_binding");
-		$this->db->from("cluster_binding");
-		$this->db->where("cluster_num", -1);
-		$number_singletons_binding = $this->db->get()->first_row()->number_singletons_binding;
+		$db->select("count(distinct cluster_num) as number_cluster_binding");
+		$db->from("cluster_binding");
+		$number_cluster_binding = $db->get()->getRow()->number_cluster_binding;
+
+		$db->select("count(cluster_num) number_singletons_binding");
+		$db->from("cluster_binding");
+		$db->where("cluster_num", -1);
+		$number_singletons_binding = $db->get()->getRow()->number_singletons_binding;
 		return array(
 			"number_cluster_sequence" => $number_cluster_sequence + $number_singletons_sequence, 
 			"number_cluster_interface" => $number_cluster_interface + $number_singletons_interface, 
@@ -223,7 +237,7 @@ class Cluster_model extends Models {
 				  JOIN peptide p ON c.id_peptide = p.id_peptide
 				  WHERE cluster_num = $cluster_num AND is_centroid = 1";
 
-		return $this->db->query($query)->first_row();
+		return $db->query($query)->first_row();
 	}
 
 	public function get_clusters_info($complex_name) {
@@ -248,36 +262,36 @@ class Cluster_model extends Models {
 				  WHERE LOWER(CONCAT_WS('_', pdb.pdb, p.peptide_chain, r.receptor_chain)) 
 				  	= LOWER('$complex_name')";
 
-		return $this->db->query($query)->first_row();
+		return $db->query($query)->first_row();
 
 	}
 
 	public function records_total($from, $cluster_num=NULL) {
 
-		$this->db->from($from);
+		$db->from($from);
 		if (isset($cluster_num)) {
-			$this->db->where("cluster_num", $cluster_num);
+			$db->where("cluster_num", $cluster_num);
 		}
-		return $this->db->count_all_results();
+		return $db->count_all_results();
 
 	}
 
 	public function get_cluster_info($cluster_type) {
 		
-		# $this->db->select("cluster_num, cluster_size");
+		# $db->select("cluster_num, cluster_size");
 		
 		switch($cluster_type){
 			case "sequence":				
-				$this->db->from("cluster_sequence_view");					
+				$db->from("cluster_sequence_view");					
 				break;
 			case "interface":				
-				$this->db->from("cluster_interface_view");					
+				$db->from("cluster_interface_view");					
 				break;
 			case "binding":				
-				$this->db->from("cluster_binding_view");					
+				$db->from("cluster_binding_view");					
 				break;
 		}
-		return $this->db->get()->result();
+		return $db->get()->result();
 	}
 
 	public function get_cluster_alignment_values($cluster_type, $cluster_num) {
@@ -310,7 +324,7 @@ class Cluster_model extends Models {
 				  AND (id_complex1 in (SELECT id_complex FROM $cluster_table WHERE cluster_num = $cluster_num)
 				  OR id_complex2 in (SELECT id_complex FROM $cluster_table WHERE cluster_num = $cluster_num))";
         
-        $array = $this->db->query($query)->result_array();
+        $array = $db->query($query)->result_array();
 		return array_map('floatval', array_column($array, $alignment_value));
 	}
 }

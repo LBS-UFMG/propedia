@@ -37,6 +37,16 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$routes->get('/explore', 'Explore::index');
+$routes->post('/explore', 'Explore::index');
+
+$routes->get('/download', 'Download::index');
+$routes->get('/search', 'Search::index');
+$routes->get('/complex', 'Complex::index');
+$routes->get('/cluster', 'Cluster::index');
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

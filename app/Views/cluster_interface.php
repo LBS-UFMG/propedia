@@ -1,3 +1,6 @@
+<?= $this->extend('template') ?>
+<?= $this->section('conteudo') ?>
+
 <div class="container-fluid">
    <div class="row">
       <div class="col-md-5 col-sm-12">
@@ -108,3 +111,5 @@
       </div>
    </div>
 </div>
+
+<?= $this->endSection() ?>

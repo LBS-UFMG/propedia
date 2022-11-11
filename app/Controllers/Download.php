@@ -8,7 +8,7 @@ class Download extends BaseController
     public function index(){
         
         $data = array();               
-        $this->template->show("download", $data);
+        return view("download", $data);
         
     }
 

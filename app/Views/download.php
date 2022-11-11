@@ -1,3 +1,6 @@
+<?= $this->extend('template') ?>
+<?= $this->section('conteudo') ?>
+
 <div class="container" style="padding: 50px 0">
    <div id="download">
       <h3>Download CSV File</h3>
@@ -106,3 +109,5 @@
       </table>
    </div>
 </div>
+
+<?=$this->endSection();?>

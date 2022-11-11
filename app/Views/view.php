@@ -1,3 +1,6 @@
+<?= $this->extend('template') ?>
+<?= $this->section('conteudo') ?>
+
 <div class="container">   
    <div class="container-fluid">
       <h2>Complex Viewer</h2>
@@ -572,3 +575,5 @@ var atomcallback = function(atom, viewer) {
 });
 
 </script>
+
+<?= $this->endSection() ?>

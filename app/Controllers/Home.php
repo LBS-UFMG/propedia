@@ -1,13 +1,15 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\ClusterModel; 
 
 class Home extends BaseController{
 
     public function index(){
         
+        #$cluters = new ClusterModel();
         // $this->load->model("cluster_model");
-        // $cluster_info = $this->cluster_model->get_cluster_numbers();
+        // $cluster_info = ClusterModel::get_cluster_numbers();
 
         // $this->load->model("complex_model");
         // $complex_number = $this->complex_model->get_complex_number();

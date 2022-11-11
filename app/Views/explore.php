@@ -1,3 +1,6 @@
+<?= $this->extend('template') ?>
+<?= $this->section('conteudo') ?>
+
 <div class="container">
    <div id="advanced_search" class="thumbnail" style="border-left: #ccc 5px solid; background-color:#eee; color: #ccc; margin-bottom: 0">
       <div class="caption"> 
@@ -199,3 +202,5 @@
    </div>
    <br>
 </div>
+
+<?= $this->endSection() ?>
