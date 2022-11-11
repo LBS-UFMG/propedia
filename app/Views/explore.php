@@ -4,6 +4,7 @@
 <style>
    .hidden{
       visibility:hidden;
+      height: 0;
    }
 </style>
 
