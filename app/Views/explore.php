@@ -125,7 +125,7 @@
 
 </div>
 
-<p class="text-center"><button class="btn border btn-light w-100" id="adv_search_button">Advanced search ▲</a></button>
+<p class="text-center"><button class="btn border btn-outline-warning w-100" id="adv_search_button">Advanced search ▲</a></button>
    <script>
       window.onload = function() {
 
