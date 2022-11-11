@@ -6,17 +6,13 @@ use CodeIgniter\Model;
 
 class ExploreModel extends Model {
 
-	public function __construct() {
-		parent::__construct();
-		$db = db_connect();
-	}
-
-	public function get_organisms() {
+	public static function get_organisms() {
 	
-		$db->from("organism");	
+		$conexao = \Config\Database::connect();
+		$db = $conexao->table('organism');
 
-		return $db->get()->result();
-		
+		return $db->get()->getResult();
+	
 	}
 
 	public function get_groups($groups_selected="(0)") {
