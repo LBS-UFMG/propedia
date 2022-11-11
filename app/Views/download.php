@@ -39,25 +39,25 @@
                <td>Complexes</td>
                <td>PDB format</td>
                <td>860M</td>
-               <td><a target="_blank" href="<?php echo base_url(); ?>download/complex.zip">complex.zip</a>
+               <td><a target="_blank" href="<?php echo base_url(); ?>/download/complex.zip">complex.zip</a>
             </tr>
             <tr>
                <td>Peptides</td>
                <td>PDB format</td>
                <td>43M</td>
-               <td><a target="_blank" href="<?php echo base_url(); ?>download/peptide.zip">peptide.zip</a>
+               <td><a target="_blank" href="<?php echo base_url(); ?>/download/peptide.zip">peptide.zip</a>
             </tr>
             <tr>
                <td>Receptors</td>
                <td>PDB format</td>
                <td>592M</td>
-               <td><a target="_blank" href="<?php echo base_url(); ?>download/receptor.zip">receptor.zip</a>
+               <td><a target="_blank" href="<?php echo base_url(); ?>/download/receptor.zip">receptor.zip</a>
             </tr>
             <tr>
                <td>Interfaces</td>
                <td>PDB format</td>
                <td>55M</td>
-               <td><a target="_blank" href="<?php echo base_url(); ?>download/interface.zip">interface.zip</a>
+               <td><a target="_blank" href="<?php echo base_url(); ?>/download/interface.zip">interface.zip</a>
             </tr>
          </tbody>
       </table>
@@ -76,7 +76,7 @@
                <td>Peptides</td>
                <td>Fasta format</td>
                <td>2.2M</td>
-               <td><a target="_blank" href="<?php echo base_url(); ?>download/peptide.fasta">peptide.fasta</a></td>
+               <td><a target="_blank" href="<?php echo base_url(); ?>/download/peptide.fasta">peptide.fasta</a></td>
             </tr>
         </tbody>
          <tbody>
@@ -84,7 +84,7 @@
                <td>Receptors</td>
                <td>Fasta format</td>
                <td>6.5M</td>
-               <td><a target="_blank" href="<?php echo base_url(); ?>download/receptor.fasta">receptor.fasta</a>
+               <td><a target="_blank" href="<?php echo base_url(); ?>/download/receptor.fasta">receptor.fasta</a>
             </tr>
         </tbody>        
       </table>
@@ -103,7 +103,7 @@
                <td>Database File</td>
                <td>SQL format</td>
                <td>54M</td>
-               <td><a target="_blank" href="<?php echo base_url(); ?>download/propedia.sql">propedia.sql</a>
+               <td><a target="_blank" href="<?php echo base_url(); ?>/download/propedia.sql">propedia.sql</a>
             </tr>
         </tbody> 
       </table>
