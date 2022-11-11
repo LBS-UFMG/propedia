@@ -141,26 +141,6 @@ class ClusterModel extends Model {
 		return $this->db->query($query)->result();
 	}
 
-	/*public function get_complex_cetroid_id($cluster_type, $cluster_num) {
-
-		$this->db->select("c.id_complex");
-		$this->db->from("complex c");
-		switch($cluster_type){			
-		    case "sequence":				
-				$this->db->join("cluster_sequence a", "c.id_complex = a.id_complex");
-		        break;
-		    case "interface":
-				$this->db->join("cluster_interface a", "c.id_complex = a.id_complex");
-		        break;
-		    case "binding":
-		        $this->db->join("cluster_binding a", "c.id_complex = a.id_complex");
-		        break;
-		}
-		$this->db->where("a.is_centroid", 1);
-		$this->db->where("a.cluster_num", $cluster_num);
-		return $this->db->get()->result();
-	}*/
-
 	public function get_centroid($cluster_type, $cluster_num) {
 		
 		$this->db->select("CONCAT_WS('-',pdb.pdb, p.peptide_chain, r.receptor_chain) AS complex, c.id_complex");

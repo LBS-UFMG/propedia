@@ -9,15 +9,8 @@ class Home extends BaseController{
 
     public function index(){
         
-        // $clusters = new ClusterModel(); // conecta com o banco de dados e retorna um objeto de conexão
-        $cluster_info = ClusterModel::get_cluster_numbers(); // acessa um método estático
+        $cluster_info = ClusterModel::get_cluster_numbers(); // acessa um método estático e pega a contagem
         $complex_number = ComplexModel::get_complex_number();
-
-        // $this->load->model("cluster_model");
-        // $cluster_info = ClusterModel::get_cluster_numbers();
-
-        // $this->load->model("complex_model");
-        // $complex_number = $this->complex_model->get_complex_number();
 
         $data = array(
             "cluster_info" => $cluster_info,
@@ -33,16 +26,10 @@ class Home extends BaseController{
         );
 
         return view('home',$data);
-
-        // $this->template->show("home", $data);        
     }
 
     // AJAX REQUESTS 
     public function ajax_get_bubble_data() {
-
-        /*if (!$this->input->is_ajax_request()) {
-            exit("Direct access not premitted!");
-        }*/
 
         $this->load->model("explore_model");
         $bubble_data = $this->explore_model->get_bubble_data();

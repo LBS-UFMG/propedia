@@ -425,7 +425,7 @@
 
     <!-- <script src="<?=base_url('/js/3dmol.js')?>"></script>principal script -->
 
-    <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
     <!-- <script src="<?=base_url('/js/dataTables.buttons.min.js')?>"></script>
     <script src="<?=base_url('/js/buttons.html5.min.js')?>"></script>
