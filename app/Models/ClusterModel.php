@@ -186,19 +186,15 @@ class ClusterModel extends Model {
 
 	public static function get_cluster_numbers() {
 
-		$db = \Config\Database::connect();
+		$conexao = \Config\Database::connect();
 
-		$builder = $db->table('cluster_sequence');
-		// $query = $builder->get();
+		$db = $conexao->table('cluster_sequence');
+		$db->select("count(distinct cluster_num) as number_cluster_sequence");
+		$db->limit(1);
+		$query = $db->get();
+		$number_cluster_sequence = $query->getResult()->number_cluster_sequence;
 
-		$builder->select("count(distinct cluster_num) as number_cluster_sequence");
-		$builder->limit(1);
-		$query = $builder->get();
-		foreach($query->getResult() as $i){
-			d($i);
-			exit();
-		}
-		dd($resposta);
+
 		
 		// $db->from("cluster_sequence");
 		$number_cluster_sequence = $db->get();
