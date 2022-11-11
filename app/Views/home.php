@@ -56,7 +56,7 @@
             </div>
             <div class="col-md-8 text-end">
               <h1><strong><a class="text-success" href="<?php echo base_url('/cluster/sequence'); ?>">
-                    </ /?=number_format($cluster_info["number_cluster_sequence"])?>
+                    <?=number_format($cluster_info["number_cluster_sequence"])?>
                   </a></strong>
               </h1>
               <p class="text-muted"><strong>SEQUENCE CLUSTERS</strong></p>
@@ -92,7 +92,7 @@
             </div>
             <div class="col-md-8 text-end">
               <h1 class="mt-3"><strong><a class="text-success" href="<?php echo base_url('/cluster/binding'); ?>">
-                    <<h1 class="mt-3">?=number_format($cluster_info["number_cluster_binding"])?>
+                    <<h1 class="mt-3"><?=number_format($cluster_info["number_cluster_binding"])?>
                   </a></strong>
               </h1>
               <p class="text-muted"><strong>BINDING SITE CLUSTERS</strong></p>
