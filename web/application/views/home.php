@@ -149,7 +149,7 @@
       <!-- COLUNA ESQUERDA -->
       <div class="col-12 col-lg-6" id="bubble">
 
-        <div class="card" style="border-left: #ccc 5px solid; color: #ccc; height: 580px">
+        <div class="card" style="border-left: #ccc 5px solid; color: #ccc; height: 480px">
           <div class="caption">
             <div id="bubble_chart" class="svg-container"></div>
           </div>
