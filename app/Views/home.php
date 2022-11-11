@@ -41,7 +41,7 @@
                   </a>
                 </strong>
               </h1>
-              <p class="text-muted"><strong>PEPTIDE-PROTEIN COMPLEXES*</strong></p>
+              <p class="text-muted small"><strong>PEPTIDE-PROTEIN COMPLEXES*</strong></p>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
                     <?= number_format($cluster_info["number_cluster_sequence"]) ?>
                   </a></strong>
               </h1>
-              <p class="text-muted"><strong>SEQUENCE CLUSTERS</strong></p>
+              <p class="text-muted small"><strong>SEQUENCE CLUSTERS</strong></p>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@
                     <?= number_format($cluster_info["number_cluster_interface"]) ?>
                   </a></strong>
               </h1>
-              <p class="text-muted"><strong>INTERFACE CLUSTERS</strong></p>
+              <p class="text-muted small"><strong>INTERFACE CLUSTERS</strong></p>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@
                   </a>
                 </strong>
               </h1>
-              <p class="text-muted"><strong>BINDING SITE CLUSTERS</strong></p>
+              <p class="text-muted small"><strong>BINDING SITE CLUSTERS</strong></p>
             </div>
           </div>
         </div>
