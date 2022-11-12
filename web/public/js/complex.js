@@ -67,7 +67,7 @@ $(function() {
         	{chain: receptor_chain}
 	    );
 
-		viewer.setStyle({},{cartoon:{color:'white', opacity:0.7}, line:{}},{chain: receptor_chain}); /* lines */
+		viewer.setStyle({},{cartoon:{color:'white'}, line:{}},{chain: receptor_chain}); /* lines */
 
 
 		/* Name of the atoms */
