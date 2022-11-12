@@ -5,6 +5,7 @@
       padding:0 !important;
    }
 </style>
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap-select.min.css">
 
         
 <div class="container-fluid">
@@ -220,3 +221,7 @@
    </div>
    <br>
 </div>
+
+
+<script src="http://bioinfo.dcc.ufmg.br/propedia/public/js/bootstrap.min.js"></script>
+<script src="http://bioinfo.dcc.ufmg.br/propedia/public/js/bootstrap-select.min.js"></script>
