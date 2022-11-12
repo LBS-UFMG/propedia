@@ -196,7 +196,7 @@
                       y:{
                         type: 'logarithmic',
                       },
-                      yAxes: [{
+                      yAxes: [{type: 'logarithmic',
                         max:700,
                         ticks: {
                           beginAtZero: false
