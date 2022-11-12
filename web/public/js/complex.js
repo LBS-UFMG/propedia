@@ -67,6 +67,9 @@ $(function() {
         	{chain: receptor_chain}
 	    );
 
+		viewer.setStyle({},{lines:{}},{chain: receptor_chain}); /* lines */
+
+
 		/* Name of the atoms */
 		atoms = m.selectedAtoms({});
 		for ( var i in atoms) {
@@ -78,7 +81,7 @@ $(function() {
 		viewer.setStyle({chain: peptide_chain}, {stick: {colorscheme:'yellowCarbon'}});
 		viewer.addSurface(
         	$3Dmol.SurfaceType.VDW, 
-			{'opacity':0.6,'color':'yellow'},
+			{'opacity':0.6,'color':'orange'},
         	{chain: peptide_chain}
 	    );
       	viewer.zoomTo();      
