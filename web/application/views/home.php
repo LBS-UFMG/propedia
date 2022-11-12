@@ -167,19 +167,19 @@
                   type: 'polarArea',
                   data: {
                     labels: [
-                      "ANTIMICROBIAL",
-                      "VIRAL",
-                      "ENZYME",
-                      "MEMBRANE",
-                      "HORMONE",
-                      "PLANT"
+                      "ANTIMICROBIAL (15)",
+                      "VIRAL (488)",
+                      "ENZYME (7489)",
+                      "MEMBRANE (204)",
+                      "HORMONE (231)",
+                      "PLANT (1239)"
                     ],
                     datasets: [{
-                      data: [15, 488, 7489, 204, 231, 1239].map(i=>Math.log10(i)),
+                      data: [15, 488, 7489, 204, 231, 1239].map(i=>Math.log10(i).toFixed(2)),
                       lineTension: 0,
                       backgroundColor: [
-                        'rgb(255, 205, 86)',
-                        'rgb(255, 99, 132)',
+                        '#ff7f0e',
+                        '#d62728',
                         'rgb(54, 162, 235)',
                         '#5cb85c',
                         '#ff1493',
@@ -191,6 +191,7 @@
                   },
                   options: {
                     scales: {
+                      
                       yAxes: [{
                         max:700,
                         ticks: {
