@@ -116,7 +116,7 @@
                $line_array = explode("\t", $line);               
 
                $complex = $line_array[0];
-               $complex_url = base_url()."complex/view/";
+               $complex_url = base_url()."index.php/complex/view/";
                $sequence = $line_array[1];
 
                echo "<a href='" . $complex_url . $complex . "'>"
