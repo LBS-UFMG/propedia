@@ -77,7 +77,7 @@ $(function() {
 		var max_receptor_size = 1500;
 	    // GET RECEPTOR SIZES
 		$.ajax({
-			url: BASE_URL + "explore/ajax_sizes_limits",
+			url: BASE_URL + "index.php/explore/ajax_sizes_limits",
 		    dataType: 'json',		        
 		    data: {"element": "receptor"},
 		    type: 'POST',
