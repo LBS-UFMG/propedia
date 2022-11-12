@@ -112,88 +112,21 @@
                 </div>
             
                 <div class="col-md-12 col-lg-12">
-                    <div class="thumbnail" style="border-left: #d9534f 5px solid; color: #ccc">
-                        <div class="caption">    
-                            <h4 class="text-danger m-2"><strong>Protein</strong></h4>   
-                            <table class="table table-condensed table-striped">  
-                                <!--<tr>
-                                    <th>PDB ID</th>
-                                    <td><a target="_blank" href="https://www.rcsb.org/structure/<?=$complex_data->pdb?>"><?=$complex_data->pdb?></a></td>
-                                </tr>-->
-                                <tr>
-                                    <th>Description</th>
-                                    <td style="width: 450px; display: inline-block; word-wrap:break-word;"><?=$complex_data->receptor_desc?></td>
-                                </tr>
-                                <tr>
-                                    <th>Organism</th>
-                                    <td style="width: 450px; display: inline-block; word-wrap:break-word;"><?=$complex_data->receptor_organism?></td>
-                                </tr>
-                                <tr>
-                                    <th>Chain</th>
-                                    <td><?=$complex_data->receptor_chain?></td>
-                                </tr>
-                                <tr>
-                                    <th>Length</th>
-                                    <td><?=$complex_data->receptor_size?></td>
-                                </tr>
-                                <tr>
-                                    <th>Binding Area (&#8491;<sup>2</sup>)</th>
-                                    <td><?=$complex_data->receptor_interface_area?></td>
-                                </tr>                                
-                                <tr>
-                                    <th>Molecular Weight</th>
-                                    <td><?=$complex_data->receptor_molecular_weight?></td>
-                                    <!-- PROTPARAM
-                                    <td id="receptor_molecular_weight"></td>-->
-                                </tr>
-                                <tr>
-                                    <th>Aromaticity</th>
-                                    <td><?=$complex_data->receptor_aromaticity?></td>
-                                    <!-- PROTPARAM 
-                                    <td id="receptor_aromaticity"></td>-->
-                                </tr>
-                                <tr>
-                                    <th>Instability</th>
-                                    <td><?=$complex_data->receptor_instability?></td>
-                                    <!-- PROTPARAM 
-                                    <td id="receptor_instability_index"></td>-->
-                                </tr>
-                                <tr>
-                                    <th>Isoelectric Point</th>
-                                    <td><?=$complex_data->receptor_isoelectric_point?></td>
-                                    <!-- PROTPARAM
-                                    <td id="receptor_isoelectric_point"></td>-->
-                                </tr>
-                                <tr>
-                                    <th>Sequence</th>
-                                    <td style="width: 450px; display: inline-block; word-wrap:break-word;"><strong>
-                                    <?php 
-                                        $seq = $complex_data->receptor_sequence;
-                                        for ($i=0; $i<strlen($seq); $i++) {
-                                            if ($seq[$i] == "X")
-                                                echo '<span style="color:#999999">' . $seq[$i] . '</span>';
-                                            else
-                                                echo $seq[$i];
-                                        }
-                                    ?></strong></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12 col-lg-12">
                     <div class="thumbnail" style="border-left: #337ab7 5px solid; color: #ccc">
                         <div class="caption">         
                             <h4 class="text-primary m-2"><strong>Peptide</strong></h4>
                             <table class="table table-condensed table-striped">  
                                 <tr>
                                     <th>Description</th>
-                                    <td style="width: 450px; display: inline-block; word-wrap:break-word;"><?=$complex_data->peptide_desc?></td>
+                                    <!-- <td style="display: inline-block; word-wrap:break-word;"> -->
+                                        <td>
+                                        <?=$complex_data->peptide_desc?></td>
                                 </tr>
                                 <tr>
                                     <th>Organism</th>
-                                    <td style="width: 450px; display: inline-block; word-wrap:break-word;"><?=$complex_data->peptide_organism?></td>
+                                    <!-- <td style="width: 450px; display: inline-block; word-wrap:break-word;"> -->
+                                        <td>
+                                        <?=$complex_data->peptide_organism?></td>
                                 </tr>
                                 <tr>
                                     <th>Chain</th>
@@ -269,6 +202,83 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="col-md-12 col-lg-12">
+                    <div class="thumbnail" style="border-left: #d9534f 5px solid; color: #ccc">
+                        <div class="caption">    
+                            <h4 class="text-danger m-2"><strong>Protein</strong></h4>   
+                            <table class="table table-condensed table-striped">  
+                                <!--<tr>
+                                    <th>PDB ID</th>
+                                    <td><a target="_blank" href="https://www.rcsb.org/structure/<?=$complex_data->pdb?>"><?=$complex_data->pdb?></a></td>
+                                </tr>-->
+                                <tr>
+                                    <th>Description</th>
+                                    <!-- <td style="width: 450px; display: inline-block; word-wrap:break-word;"> -->
+                                        <td>
+                                    <?=$complex_data->receptor_desc?></td>
+                                </tr>
+                                <tr>
+                                    <th>Organism</th>
+                                    <!-- <td style="width: 450px; display: inline-block; word-wrap:break-word;"> -->
+                                        <td>
+                                    <?=$complex_data->receptor_organism?></td>
+                                </tr>
+                                <tr>
+                                    <th>Chain</th>
+                                    <td><?=$complex_data->receptor_chain?></td>
+                                </tr>
+                                <tr>
+                                    <th>Length</th>
+                                    <td><?=$complex_data->receptor_size?></td>
+                                </tr>
+                                <tr>
+                                    <th>Binding Area (&#8491;<sup>2</sup>)</th>
+                                    <td><?=$complex_data->receptor_interface_area?></td>
+                                </tr>                                
+                                <tr>
+                                    <th>Molecular Weight</th>
+                                    <td><?=$complex_data->receptor_molecular_weight?></td>
+                                    <!-- PROTPARAM
+                                    <td id="receptor_molecular_weight"></td>-->
+                                </tr>
+                                <tr>
+                                    <th>Aromaticity</th>
+                                    <td><?=$complex_data->receptor_aromaticity?></td>
+                                    <!-- PROTPARAM 
+                                    <td id="receptor_aromaticity"></td>-->
+                                </tr>
+                                <tr>
+                                    <th>Instability</th>
+                                    <td><?=$complex_data->receptor_instability?></td>
+                                    <!-- PROTPARAM 
+                                    <td id="receptor_instability_index"></td>-->
+                                </tr>
+                                <tr>
+                                    <th>Isoelectric Point</th>
+                                    <td><?=$complex_data->receptor_isoelectric_point?></td>
+                                    <!-- PROTPARAM
+                                    <td id="receptor_isoelectric_point"></td>-->
+                                </tr>
+                                <tr>
+                                    <th>Sequence</th>
+                                    <td style="width: 450px; display: inline-block; word-wrap:break-word;"><strong>
+                                    <?php 
+                                        $seq = $complex_data->receptor_sequence;
+                                        for ($i=0; $i<strlen($seq); $i++) {
+                                            if ($seq[$i] == "X")
+                                                echo '<span style="color:#999999">' . $seq[$i] . '</span>';
+                                            else
+                                                echo $seq[$i];
+                                        }
+                                    ?></strong></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                
                 <div class="col-md-12 col-lg-6">
                     <div class="thumbnail" style="border-left: orange 5px solid; color: #ccc">
                         <div class="caption">         
