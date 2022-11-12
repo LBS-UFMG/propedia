@@ -52,7 +52,7 @@ class Explore extends CI_Controller{
         $query = $this->db->last_query();
 
         $data = array();        
-        $complex_url = base_url()."complex/view/";        
+        $complex_url = base_url()."index.php/complex/view/";        
 
         // modificacao diego
         //$unicos = array();
