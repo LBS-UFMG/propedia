@@ -7,7 +7,7 @@
           <p style="font-size:16px; padding:15px 0; text-align: justify;">
             PROPEDIA is a database of peptide-protein complexes clusterized in three methodologies: based on <strong>peptide sequences</strong>; based on <strong>structure interface</strong>; and based on <strong>binding sites</strong>. PROPEDIA main goal is to give new insights into peptide design of biotechnological interests.
           </p>
-          <a href="<?php echo base_url('explore'); ?>" class="btn btn-primary">Explore v2.3</a>
+          <a href="<?php echo base_url('index.php/explore'); ?>" class="btn btn-primary">Explore v2.3</a>
           <a href="http://bioinfo.dcc.ufmg.br/propedia" class="btn btn-outline-primary">Back to Propedia v1.0</a>
 
           <!--<a href="#" data-toggle="modal" class="btn btn-success btn-lg" data-target="#tutorial">Tutorial</a>-->
@@ -141,7 +141,7 @@
   <p class="lead text-muted">Propedia is composed of many datasets of protein-peptide complexes. You can explore and construct your queries clicking on "View all" button or browse by the most accessed datasets shown below.</p>
 
 
-  <form id="dataset_filter" method="post" action="<?= base_url('/explore'); ?>">
+  <form id="dataset_filter" method="post" action="<?= base_url('index.php/explore'); ?>">
     <div class="row">
 
       <input hidden id="groups_selected" name="groups_selected" value="">
@@ -288,7 +288,7 @@
             </tbody>
         </table>
         <br><br>
-        <a class="btn btn-outline-success btn-lg d-block" href="<?php echo base_url('explore'); ?>" role="button">Show more...</a>
+        <a class="btn btn-outline-success btn-lg d-block" href="<?php echo base_url('index.php/explore'); ?>" role="button">Show more...</a>
     </div>
 </div>
 
