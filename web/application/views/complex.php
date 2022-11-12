@@ -114,7 +114,7 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="thumbnail" style="border-left: #d9534f 5px solid; color: #ccc">
                         <div class="caption">    
-                            <h4 class="text-danger m-1"><strong>Protein</strong></h4>   
+                            <h4 class="text-danger m-2"><strong>Protein</strong></h4>   
                             <table class="table table-condensed table-striped">  
                                 <!--<tr>
                                     <th>PDB ID</th>
@@ -185,7 +185,7 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="thumbnail" style="border-left: #337ab7 5px solid; color: #ccc">
                         <div class="caption">         
-                            <h4 class="text-primary m-1"><strong>Peptide</strong></h4>
+                            <h4 class="text-primary m-2"><strong>Peptide</strong></h4>
                             <table class="table table-condensed table-striped">  
                                 <tr>
                                     <th>Description</th>
@@ -272,7 +272,7 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="thumbnail" style="border-left: orange 5px solid; color: #ccc">
                         <div class="caption">         
-                            <h4 class="text-warning m-1"><strong>Clustering Classification</strong></h4>   
+                            <h4 class="text-warning m-2"><strong>Clustering Classification</strong></h4>   
                             <table class="table table-condensed table-striped">  
                                 <tr>
                                     <th>Sequence cluster</th>
@@ -344,7 +344,7 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="thumbnail" style="border-left: #ccc 5px solid; color: #ccc">
                         <div class="caption">         
-                            <h4 class="text-muted m-1"><strong>Similar complexes</strong></h4> 
+                            <h4 class="text-muted m-2"><strong>Similar complexes</strong></h4> 
                             <p class="text-muted">Is the complex classified in the same cluster?</p>
                             <table class="table table-striped table-hover text-center">
                                 <tr>
