@@ -87,7 +87,7 @@ class Cluster extends CI_Controller{
                 );
                 $this->template->show("cluster_interface", $data);
             } else if ($cluster_size == 1) {                
-                redirect("/complex/view/" . $complex_reference->complex);
+                redirect("/index.php/complex/view/" . $complex_reference->complex);
                 #$this->load->library("complex/view/" . $complex_reference->complex);
             } else {
                 // CALL CLUSTER EXPLORE
@@ -143,7 +143,7 @@ class Cluster extends CI_Controller{
                 );
                 $this->template->show("cluster_binding", $data);
             } else if ($cluster_size == 1) {
-                redirect("/complex/view/" . $complex_reference->complex);
+                redirect("/index.php/complex/view/" . $complex_reference->complex);
                 #$this->load->library("complex/view/" . $complex_reference->complex);
             } else {
                 // CALL CLUSTER EXPLORE
@@ -279,7 +279,7 @@ class Cluster extends CI_Controller{
         //$query1 = $this->db->last_query();
     
         $data = array();
-        $complex_url = base_url()."complex/view/";
+        $complex_url = base_url()."index.php/complex/view/";
         
         # ADD IN $complex_list_download
         $complex_list_download = array();
@@ -368,7 +368,7 @@ class Cluster extends CI_Controller{
             "binding", $cluster_num, true)[0];
     
         $data = array();
-        $complex_url = base_url()."complex/view/";
+        $complex_url = base_url()."index.php/complex/view/";
         
         # ADD IN $complex_list_download
         $complex_list_download = array();
@@ -469,7 +469,7 @@ class Cluster extends CI_Controller{
         }
 
         $data = array();        
-        $cluster_url = base_url()."cluster/$cluster_type/";
+        $cluster_url = base_url()."index.php/cluster/$cluster_type/";
         foreach ($clusters as $cluster_num => $cluster_info) {
         
             $row = array();
