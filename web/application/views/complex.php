@@ -126,7 +126,7 @@
                                     <th>Organism</th>
                                     <!-- <td style="width: 450px; display: inline-block; word-wrap:break-word;"> -->
                                         <td>
-                                        <?=$complex_data->peptide_organism?></td>
+                                        <em><?=$complex_data->peptide_organism?></em></td>
                                 </tr>
                                 <tr>
                                     <th>Chain</th>
@@ -202,7 +202,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-12 col-lg-12">
                     <div class="thumbnail" style="border-left: #d9534f 5px solid; color: #ccc">
                         <div class="caption">    
@@ -222,7 +222,8 @@
                                     <th>Organism</th>
                                     <!-- <td style="width: 450px; display: inline-block; word-wrap:break-word;"> -->
                                         <td>
-                                    <?=$complex_data->receptor_organism?></td>
+                                    <em><?=$complex_data->receptor_organism?></em>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>Chain</th>
@@ -355,7 +356,7 @@
                     <div class="thumbnail" style="border-left: #ccc 5px solid; color: #ccc">
                         <div class="caption">         
                             <h4 class="text-muted m-2"><strong>Similar complexes</strong></h4> 
-                            <p class="text-muted">Is the complex classified in the same cluster?</p>
+                            <p class="text-muted m-2">Is the complex classified in the same cluster?</p>
                             <table class="table table-striped table-hover text-center">
                                 <tr>
                                     <th>Complex</th>
