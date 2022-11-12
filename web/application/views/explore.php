@@ -6,19 +6,12 @@
    }
 
    .dataTables_wrapper .dataTables_processing {
-position: absolute;
-top: 30%;
-left: 50%;
-width: 30%;
-height: 40px;
-margin-left: -20%;
-margin-top: -25px;
-padding-top: 20px;
-text-align: center;
-font-size: 5.2em;
-background:#19875455;
-
-}
+      position: absolute;
+      padding: 100px 200px;
+      text-align: center;
+      font-size: 3em;
+      background:#19875455;
+   }
 </style>
 <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap-select.min.css">
 
