@@ -16,7 +16,7 @@ margin-top: -25px;
 padding-top: 20px;
 text-align: center;
 font-size: 1.2em;
-background:none;
+background:red;
 }
 </style>
 <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap-select.min.css">
