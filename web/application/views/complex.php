@@ -26,7 +26,7 @@
                                 $complex_name = $complex_data->pdb . "_" . $complex_data->peptide_chain . "_" . $complex_data->receptor_chain;
                                 $complex_name_html = strtoupper($complex_data->pdb . "-" . $complex_data->peptide_chain . "-" . $complex_data->receptor_chain);
                             ?>
-                            <h1 class="pt-1 m-1 ms-2 display-3 text-dark"><strong style="padding-right: 3px"><?=$complex_name_html?></strong> <a title='Download PDB' href='<?=base_url()?>public/pdb/structures/complex/<?=$complex_name?>.pdb'><i class="fas fa-arrow-alt-circle-down"></i></a></h1>
+                            <h1 class="pt-1 m-1 ms-2 display-2 text-success"><strong style="padding-right: 3px"><?=$complex_name_html?></strong> <a title='Download PDB' href='<?=base_url()?>public/pdb/structures/complex/<?=$complex_name?>.pdb'><i class="fas fa-arrow-alt-circle-down"></i></a></h1>
 
                             <div style="margin: 10px 0 30px 0">
                                 <a target="_blank" style='text-decoration:none' title="Search in PDB" href="https://www.rcsb.org/structure/<?=$complex_data->pdb?>">
