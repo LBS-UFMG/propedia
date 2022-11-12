@@ -175,7 +175,7 @@
                       "PLANT"
                     ],
                     datasets: [{
-                      data: [15, 488, 7489, 204, 231, 1239].map(i=>Math.log2(i)),
+                      data: [15, 488, 7489, 204, 231, 1239].map(i=>Math.log10(i)),
                       lineTension: 0,
                       backgroundColor: [
                         'rgb(255, 205, 86)',
