@@ -162,7 +162,7 @@
             <script>
               (() => {
                 'use strict';
-
+console.log('aqui');
                 // gráfico 6 - ---------------------------------------
     const onde6 = document.getElementById('g6')
     const grafico6 = new Chart(onde6, {
