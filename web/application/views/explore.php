@@ -7,9 +7,9 @@
 
    .dataTables_wrapper .dataTables_processing {
       position: absolute;
-      padding: 100px 200px;
+      padding: 300px 500px;
       text-align: center;
-      font-size: 3em;
+      font-size: 5em;
       background:#19875455;
    }
 </style>
