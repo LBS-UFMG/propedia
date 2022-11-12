@@ -58,12 +58,12 @@ $(function() {
 
 		viewer.setStyle(
 			{},
-			{cartoon:{color:'white'}});
+			{cartoon:{color:'spectrum'}});
 
 		viewer.addSurface(
         	$3Dmol.SurfaceType.VDW, 
         	// {opacity:0.7, volscheme: new $3Dmol.Gradient.RWB(-10,10)},
-			{'opacity':0.7,'color':'green'},
+			{'opacity':0.4,'color':'green'},
         	{chain: receptor_chain}
 	    );
 
