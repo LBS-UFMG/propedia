@@ -6,11 +6,7 @@
    }
 </style>
 
-    
-<link rel="stylesheet" href="http://bioinfo.dcc.ufmg.br/propedia/public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://bioinfo.dcc.ufmg.br/propedia/public/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="http://bioinfo.dcc.ufmg.br/propedia/public/css/bootstrap-select.min.css">
-    
+        
 <div class="container-fluid">
    <div id="advanced_search" class="card p-3 small" style="border-left: #ccc 5px solid; background-color:#eee; color: #ccc; margin-bottom: 0">
       <div class="caption"> 
