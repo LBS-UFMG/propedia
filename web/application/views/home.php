@@ -151,53 +151,51 @@
 
         <div class="card" style="border-left: #ccc 5px solid; color: #ccc; height: 480px">
           <div class="caption">
-            <div id="bubble_chart" class="svg-container"></div>
+            <!-- <div id="bubble_chart" class="svg-container"></div> -->
 
             <!-- biblioteca -->
             <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
 
             <!-- local onde será gerado o grafico -->
-            <canvas class="my-4 w-100" id="g6" width="900" height="450"></canvas>
+            <canvas class="my-4 w-100" id="radar" height="480"></canvas>
 
             <script>
               (() => {
                 'use strict';
-console.log('aqui');
-                // gráfico 6 - ---------------------------------------
-    const onde6 = document.getElementById('g6')
-    const grafico6 = new Chart(onde6, {
-      type: 'bar',
-      data: {
-        labels: [
-          "Hidroxicloroquina",
-          "Tocilizumabe",
-        ],
-        datasets: [{
-          data: [283,
-            171,
-          ],
-          lineTension: 0,
-          backgroundColor: '#1e90ff',
-          fill: '#1e90ff',
-          //borderColor: '#1e90ff',
-          //borderWidth: 4,
-          pointBackgroundColor: '#1e90ff'
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            max:700,
-            ticks: {
-              beginAtZero: false
-            }
-          }]
-        },
-        legend: {
-          display: false
-        }
-      }
-    })
+              const onde = document.getElementById('radar');
+
+
+                const grafico6 = new Chart(onde, {
+                  type: 'polarArea',
+                  data: {
+                    labels: [
+                      "Hidroxicloroquina",
+                      "Tocilizumabe",
+                    ],
+                    datasets: [{
+                      data: [283,
+                        171,
+                      ],
+                      lineTension: 0,
+                      backgroundColor: '#1e90ff',
+                      fill: '#1e90ff',
+                      pointBackgroundColor: '#1e90ff'
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      yAxes: [{
+                        max:700,
+                        ticks: {
+                          beginAtZero: false
+                        }
+                      }]
+                    },
+                    legend: {
+                      display: false
+                    }
+                  }
+                })
               })();
             </script>
 
