@@ -163,8 +163,6 @@
               (() => {
                 'use strict';
               const onde = document.getElementById('radar');
-
-
                 const grafico = new Chart(onde, {
                   type: 'polarArea',
                   data: {
@@ -177,7 +175,7 @@
                       "PLANT"
                     ],
                     datasets: [{
-                      data: [15, 488, 7489, 204, 231, 1239 ],
+                      data: [15, 488, 7489, 204, 231, 1239].map(i=>Math.log2(i)),
                       lineTension: 0,
                       backgroundColor: [
                         'rgb(255, 205, 86)',
@@ -193,10 +191,6 @@
                   },
                   options: {
                     scales: {
-                      ticks: {
-                        userCallback: function (value, index, values) {
-                        Math.round(Math.pow(2,value)); //SO this will make the scale a logrithmic
-                      },
                       yAxes: [{
                         max:700,
                         ticks: {
