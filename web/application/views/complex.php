@@ -2,7 +2,7 @@
 
     <?php 
     # DEFINE COMPLEX URL
-    $complex_url = base_url()."complex/view/" . join("-", array($complex_data->pdb, $complex_data->peptide_chain, $complex_data->receptor_chain));
+    $complex_url = base_url()."index.php/complex/view/" . join("-", array($complex_data->pdb, $complex_data->peptide_chain, $complex_data->receptor_chain));
     ?>
 
     <div class="row">
@@ -30,15 +30,15 @@
 
                             <div style="margin: 10px 0 30px 0">
                                 <a target="_blank" style='text-decoration:none' title="Search in PDB" href="https://www.rcsb.org/structure/<?=$complex_data->pdb?>">
-                                    <span class="label label-default text-muted">PDB</span>
+                                    <span class="badge bg-secondary text-muted">PDB</span>
                                 </a>
 
                                 <a target="_blank" style='text-decoration:none' title="Search in UniProt" href="https://www.uniprot.org/uniprot/?query=<?=$complex_data->pdb?>+database:pdb">
-                                    <span class="label label-info">UniProt</span>
+                                    <span class="badge bg-info">UniProt</span>
                                 </a>
 
                                 <a target="_blank" style='text-decoration:none' title="Search in PubMed" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=<?=$complex_data->pdb?>">
-                                    <span class="label label-warning">PubMed</span>
+                                    <span class="badge bg-warning">PubMed</span>
                                 </a>
 
                                 <?php if (isset($cluster_data["sequence"]->cluster_num)) {
@@ -46,10 +46,10 @@
                                     $cluster_num =$cluster_data["sequence"]->cluster_num;
                                     # SINGLETON SEQUENCE
                                     if ($cluster_num == -1) {                                        
-                                        echo "<a title='Classified in the sequence singleton' style='text-decoration:none' href='".$complex_url."'><span class='label label-success'>Singleton S</span></a>";
+                                        echo "<a title='Classified in the sequence singleton' style='text-decoration:none' href='".$complex_url."'><span class='badge bg-success'>Singleton S</span></a>";
                                     } else {
                                         $cluster_url = base_url()."cluster/sequence/";
-                                        echo "<a title='Classified in the sequence cluster number $cluster_num' style='text-decoration:none' href='".$cluster_url."$cluster_num'><span class='label label-success'>Cluster S";
+                                        echo "<a title='Classified in the sequence cluster number $cluster_num' style='text-decoration:none' href='".$cluster_url."$cluster_num'><span class='badge bg-success'>Cluster S";
                                         echo "$cluster_num";
                                         echo '</span></a>';
                                     }
@@ -60,10 +60,10 @@
                                     $cluster_num =$cluster_data["binding"]->cluster_num;
                                     # SINGLETON CONTACT
                                     if ($cluster_num == -1) {                                        
-                                        echo "<a title='Classified in the binding singleton' style='text-decoration:none' href='".$complex_url."'><span class='label label-primary'>Singleton C</span></a>";
+                                        echo "<a title='Classified in the binding singleton' style='text-decoration:none' href='".$complex_url."'><span class='badge bg-primary'>Singleton C</span></a>";
                                     } else {
                                         $cluster_url = base_url()."cluster/binding/";
-                                        echo "<a title='Classified in the binding cluster number $cluster_num' style='text-decoration:none' href='".$cluster_url."$cluster_num'><span class='label label-primary'>Cluster C";
+                                        echo "<a title='Classified in the binding cluster number $cluster_num' style='text-decoration:none' href='".$cluster_url."$cluster_num'><span class='badge bg-primary'>Cluster C";
                                         echo "$cluster_num";
                                         echo '</span></a>';
                                     }
@@ -73,10 +73,10 @@
                                     $cluster_num =$cluster_data["interface"]->cluster_num;
                                     # SINGLETON CONTACT
                                     if ($cluster_num == -1) {                                        
-                                        echo "<a title='Classified in the interface singleton' style='text-decoration:none' href='".$complex_url."'><span class='label label-danger'>Singleton I</span></a>";
+                                        echo "<a title='Classified in the interface singleton' style='text-decoration:none' href='".$complex_url."'><span class='badge bg-danger'>Singleton I</span></a>";
                                     } else {
                                         $cluster_url = base_url()."cluster/interface/";
-                                        echo "<a title='Classified in the interface cluster number $cluster_num' style='text-decoration:none' href='".$cluster_url."$cluster_num'><span class='label label-danger'>Cluster I";
+                                        echo "<a title='Classified in the interface cluster number $cluster_num' style='text-decoration:none' href='".$cluster_url."$cluster_num'><span class='badge bg-danger'>Cluster I";
                                         echo "$cluster_num";
                                         echo '</span></a>';
                                     }
