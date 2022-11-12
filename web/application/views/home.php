@@ -206,7 +206,10 @@
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
                     <i style="font-size: 72px" class="fas fa-water"></i>
-                    <p class="text-muted">PROPEDIA<br><strong>TRANSCRIPTION</strong>DB</p>
+                    <p class="text-muted">PROPEDIA<br>
+                      <!-- <strong>TRANSCRIPTION</strong> -->
+                      <strong>MEMBRANE</strong>
+                    DB</p>
                   </div>
                 </div>
               </div>
