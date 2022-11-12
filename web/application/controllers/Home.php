@@ -37,8 +37,20 @@ class Home extends CI_Controller{
             exit("Direct access not premitted!");
         }*/
 
-        $this->load->model("explore_model");
-        $bubble_data = $this->explore_model->get_bubble_data();
+        // $this->load->model("explore_model");
+        // $bubble_data = $this->explore_model->get_bubble_data();
+
+        return $bubble_data = ["name"=> [
+            "ANTIMICROBIAL", 
+            "VIRAL", 
+            "ENZYME", 
+            "MEMBRANE", 
+            "HORMONE", 
+            "PLANT"],
+          "value"=>[
+            100, 2000, 200, 300, 50, 1000
+            ]
+        ];
 
         if (!empty($bubble_data)) {
 
