@@ -30,7 +30,10 @@
          <div class="row" style="margin-top: 10px">   
             <div class="col-md-6 col-sm-12">
                <label for="id_organism" class="label label-default">Organism:</label>
-               <select id="id_organism" class="form-control selectpicker filter filter-select" style="width: 100%" data-live-search="true" multiple title="-">               
+               <!-- <select id="id_organism" class="form-control selectpicker filter filter-select" style="width: 100%" data-live-search="true" multiple title="-">                -->
+                  
+               <select id="id_organism" class="form-control" multiple title="-">         
+
                   <?php foreach ($organisms as $organism): ?>
                      <?="<option value=$organism->id_organism>$organism->organism</option>";?>
                   <?php endforeach; ?>
@@ -41,7 +44,9 @@
             <div class="col-md-6 col-sm-12">
                <label for="id_group" class="label label-default">Groups:</label>
                <sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Groups are keywords derived from PDB classifications">?</a></sup>
-               <select id="id_group" class="form-control selectpicker filter" style="width: 100%" data-live-search="true" multiple title="-">
+               <!-- <select id="id_group" class="form-control selectpicker filter" style="width: 100%" data-live-search="true" multiple title="-"> -->
+               <select id="id_group" class="form-control" multiple title="-">
+
                   <?php foreach ($groups as $group): 
                      $selected = $group->selected == 1 ? "selected" : "";
                      echo "<option $selected value=$group->id_group>$group->group</option>";
@@ -222,5 +227,3 @@
    <br>
 </div>
 
-
-<script src="http://bioinfo.dcc.ufmg.br/propedia2/public/js/bootstrap-select.min.js"></script>
