@@ -192,7 +192,7 @@
             padding: 5px 10px;
          }         
          .paginate_button:hover{
-            color:white;
+            color:white !important;
             background:#0d6efd;
          }
       </style>
