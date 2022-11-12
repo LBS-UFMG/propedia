@@ -184,6 +184,14 @@
 
       </div>
 
+      <style>
+         .paginate_button{
+            margin: 10px;
+            border: 1px solid #0d6efd;
+            border-radius: 5px;
+            padding: 5px 10px;
+         }         
+      </style>
       <div class="row">
          <table id="dt_complex_explore" class="table table-striped table-hover table-sm small">
             <thead>
