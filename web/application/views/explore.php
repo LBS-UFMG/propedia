@@ -192,8 +192,7 @@
             padding: 5px 10px;
          }         
          .paginate_button:hover{
-            color:white !important;
-            background:#0d6efd;
+            background:#eee;
          }
       </style>
       <div class="row">
