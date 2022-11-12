@@ -193,10 +193,11 @@
                   },
                   options: {
                     scales: {
-                      y:{
-                        type: 'logarithmic',
+                      ticks: {
+                        userCallback: function (value, index, values) {
+                        Math.round(Math.pow(2,value)); //SO this will make the scale a logrithmic
                       },
-                      yAxes: [{type: 'logarithmic',
+                      yAxes: [{
                         max:700,
                         ticks: {
                           beginAtZero: false
