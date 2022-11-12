@@ -208,8 +208,7 @@
                     <i style="font-size: 72px" class="fas fa-water"></i>
                     <p class="text-muted">PROPEDIA<br>
                       <!-- <strong>TRANSCRIPTION</strong> -->
-                      <strong>MEMBRANE</strong>
-                    DB</p>
+                      <strong>MEMBRANE</strong>DB</p>
                   </div>
                 </div>
               </div>
@@ -246,11 +245,10 @@
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
-                    <i style="font-size: 72px" class="fas fa-skull-crossbones"></i>
+                    <i style="font-size: 72px" class="fas fa-seedling"></i>
                     <p class="text-muted">PROPEDIA<br>
                     <!-- <strong>TOXIN</strong> -->
-                    <strong>PLANT</strong>
-                    DB</p>
+                    <strong>PLANT</strong>DB</p>
                   </div>
                 </div>
               </div>
