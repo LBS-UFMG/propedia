@@ -152,6 +152,101 @@
         <div class="card" style="border-left: #ccc 5px solid; color: #ccc; height: 480px">
           <div class="caption">
             <div id="bubble_chart" class="svg-container"></div>
+
+            <!-- biblioteca -->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+
+            <!-- local onde será gerado o grafico -->
+            <canvas class="my-4 w-100" id="g6" width="900" height="450"></canvas>
+
+            <script>
+              (() => {
+                'use strict';
+
+                // gráfico 6 - ---------------------------------------
+    const onde6 = document.getElementById('g6')
+    const grafico6 = new Chart(onde6, {
+      type: 'bar',
+      data: {
+        labels: [
+          "Hidroxicloroquina",
+          "Tocilizumabe",
+          "Ritonavir",
+          "Lopinavir",
+          "Remdesivir",
+          "Cloroquina",
+          "Plasma convalescente",
+          "Azitromicina",
+          "Corticosteroides",
+          "Antagonistas do Receptor da Angiotensina II",
+          "Inibidores da Enzima Conversora da Angiotensina 2 (IECA 2)",
+          "Heparina",
+          "Prednisona",
+          "Favipiravir",
+          "Umifenovir",
+          "Imunoglobulina",
+          "Anakinra",
+          "Terapia celular",
+          "Ribavirina",
+          "Dexametasona",
+          "Oseltamivir",
+          "Interferon alfa",
+          "Vitamina D (25-hidroxivitamina D)",
+          "Interferon",
+          "Darunavir"
+        ],
+        datasets: [{
+          data: [283,
+            171,
+            147,
+            146,
+            146,
+            116,
+            101,
+            99,
+            85,
+            64,
+            64,
+            52,
+            50,
+            50,
+            36,
+            35,
+            33,
+            30,
+            28,
+            26,
+            23,
+            22,
+            21,
+            21,
+            20
+          ],
+          lineTension: 0,
+          backgroundColor: '#1e90ff',
+          fill: '#1e90ff',
+          //borderColor: '#1e90ff',
+          //borderWidth: 4,
+          pointBackgroundColor: '#1e90ff'
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            max:700,
+            ticks: {
+              beginAtZero: false
+            }
+          }]
+        },
+        legend: {
+          display: false
+        }
+      }
+    })
+              })
+            </script>
+
           </div>
         </div>
       </div>
