@@ -63,7 +63,7 @@ $(function() {
 		viewer.addSurface(
         	$3Dmol.SurfaceType.VDW, 
         	// {opacity:0.7, volscheme: new $3Dmol.Gradient.RWB(-10,10)},
-			{'opacity':0.4,'color':'green'},
+			{'opacity':0.6,'color':'green'},
         	{chain: receptor_chain}
 	    );
 
@@ -76,6 +76,11 @@ $(function() {
 		}
 
 		viewer.setStyle({chain: peptide_chain}, {stick: {colorscheme:'yellowCarbon'}});
+		viewer.addSurface(
+        	$3Dmol.SurfaceType.VDW, 
+			{'opacity':0.6,'color':'yellow'},
+        	{chain: peptide_chain}
+	    );
       	viewer.zoomTo();      
 		viewer.render();
 	})
