@@ -241,13 +241,16 @@
             </div>
           </div>
 
-          <div class="col-6" onclick="showDataset([66])" title="Click to explore this dataset">
+          <div class="col-6" onclick="showDataset([51,52])" title="Click to explore this dataset">
             <div class="card p-2 specific_db" style="border-left: #00ff00 5px solid; color: #00ff00">
               <div class="caption">
                 <div class="row">
                   <div class="col-md-12 text-center text-muted">
                     <i style="font-size: 72px" class="fas fa-skull-crossbones"></i>
-                    <p class="text-muted">PROPEDIA<br><strong>TOXIN</strong>DB</p>
+                    <p class="text-muted">PROPEDIA<br>
+                    <!-- <strong>TOXIN</strong> -->
+                    <strong>PLANT</strong>
+                    DB</p>
                   </div>
                 </div>
               </div>
