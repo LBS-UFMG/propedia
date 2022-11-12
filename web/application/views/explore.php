@@ -223,5 +223,4 @@
 </div>
 
 
-<script src="http://bioinfo.dcc.ufmg.br/propedia/public/js/bootstrap.min.js"></script>
-<script src="http://bioinfo.dcc.ufmg.br/propedia/public/js/bootstrap-select.min.js"></script>
+<script src="http://bioinfo.dcc.ufmg.br/propedia2/public/js/bootstrap-select.min.js"></script>
