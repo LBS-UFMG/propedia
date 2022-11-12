@@ -7,9 +7,10 @@
 
    .dataTables_wrapper .dataTables_processing {
       position: absolute;
-      color:white;
+      color: white;
+      margin-top: -50%;
       height: 100vh;
-      width: 100vw;
+      width: 100%;
       text-align: center;
       font-size: 5em;
       background:#19875455;
