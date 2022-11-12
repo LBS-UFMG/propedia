@@ -244,7 +244,7 @@ console.log('aqui');
         }
       }
     })
-              })
+              })();
             </script>
 
           </div>
