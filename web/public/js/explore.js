@@ -47,7 +47,7 @@ $(function() {
 		var max_peptide_size = 50;
 	    // GET PEPTIDE SIZES
 		$.ajax({
-			url: BASE_URL + "explore/ajax_sizes_limits",
+			url: BASE_URL + "index.php/explore/ajax_sizes_limits",
 		    dataType: 'json',		        
 		    data: {"element": "peptide"},
 		    type: 'POST',
