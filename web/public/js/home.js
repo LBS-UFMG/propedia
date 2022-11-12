@@ -3,7 +3,7 @@ console.log(BASE_URL + "index.php/explore/ajax_list_complex")
 	var num_complexes = 17564;
 	var length = 10;
 	var rand = Array.from({length: length}, () => Math.floor(Math.random() * num_complexes)).toString();
-	console.log(rand)
+	rand = [11517,8250,11986,2977,4965,11804,721,3280,12919,484] // exibir aleatório estava gerando erros algumas vezes
 	var dt = $("#dt_complex_home").DataTable({
 		"oLanguage": DATATABLE_CHANGES,		
 		"processing":   true,
