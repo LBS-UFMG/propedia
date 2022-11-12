@@ -10,7 +10,7 @@ $(function() {
             cluster_num: cluster_num,
             cluster_type: cluster_type,
         },
-        url: BASE_URL + "cluster/ajax_cluster_graph",
+        url: BASE_URL + "index.php/cluster/ajax_cluster_graph",
         success: function(data) {
 
             var svg = d3.select("#cluster_viz");
