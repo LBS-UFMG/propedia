@@ -165,7 +165,7 @@
               const onde = document.getElementById('radar');
 
 
-                const grafico6 = new Chart(onde, {
+                const grafico = new Chart(onde, {
                   type: 'polarArea',
                   data: {
                     labels: [
@@ -177,13 +177,7 @@
                       "PLANT"
                     ],
                     datasets: [{
-                      data: [15,
-                        488,
-                        7489,
-                        204,
-                        231,
-                        1239
-                      ],
+                      data: [15, 488, 7489, 204, 231, 1239 ],
                       lineTension: 0,
                       backgroundColor: [
                         'rgb(255, 205, 86)',
@@ -199,6 +193,9 @@
                   },
                   options: {
                     scales: {
+                      y:{
+                        type: 'logarithmic',
+                      },
                       yAxes: [{
                         max:700,
                         ticks: {
@@ -207,7 +204,7 @@
                       }]
                     },
                     legend: {
-                      display: false
+                      display: true
                     }
                   }
                 })
