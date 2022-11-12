@@ -36,7 +36,7 @@ $(function() {
 	        "paging":     false,
 	        "info": false,
 			"ajax": {
-				"url": BASE_URL + "cluster/" + ajax_call,
+				"url": BASE_URL + "index.php/cluster/" + ajax_call,
 				"type": "POST",
 				"data": {
 	        		"cluster_type": cluster_type,
@@ -80,7 +80,7 @@ $(function() {
 			"responsive": false,
 	        "paging":     false,
 			"ajax": {
-				"url": BASE_URL + "cluster/" + ajax_call,
+				"url": BASE_URL + "index.php/cluster/" + ajax_call,
 				"type": "POST",
 				"data": {
 					"id_complex_reference": function () { return $("#select_complex_reference").val(); },
@@ -354,7 +354,7 @@ function call_boxplot(cluster_name) {
     ajax = $.ajax({
         "method": "POST",
         "dataType": "json",
-        "url": BASE_URL + "cluster/ajax_get_cluster_alignments/", 
+        "url": BASE_URL + "index.php/cluster/ajax_get_cluster_alignments/", 
         "data": {cluster_name: cluster_name},
         beforeSend: function() {
             var size = "40";
