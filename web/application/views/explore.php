@@ -8,11 +8,12 @@
    .dataTables_wrapper .dataTables_processing {
       position: absolute;
       padding: 100px;
+      margin-top:-500px;
       color: white;
       height: 100vh;
       width: 100%;
       text-align: center;
-      font-size: 3em;
+      font-size: 2em;
       background:#19875455;
    }
 </style>
