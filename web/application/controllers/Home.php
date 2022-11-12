@@ -22,8 +22,8 @@ class Home extends CI_Controller{
             ),
             "scripts" => array(
                 "home.js",
-                /*"bubble_chart_tooltip.js",
-                "bubble_chart.js"*/
+                "bubble_chart_tooltip.js",
+                "bubble_chart.js"
             ),            
         );
                
