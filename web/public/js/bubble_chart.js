@@ -20,14 +20,14 @@ function bubbleChart() {
 
   var dataset = {
     "name": [
-      //"ANTIMICROBIAL", 
+      "ANTIMICROBIAL", 
       "VIRAL", 
       "ENZYME", 
+      "MEMBRANE", 
       "HORMONE", 
-      "TOXIN", 
-      "OTHERS"],
+      "PLANT"],
     "color": [
-      //"#ff8c00", 
+      "#ff8c00", 
       "#d62728", 
       "#1e90ff", 
       "#ff1493", 
@@ -425,7 +425,7 @@ function addCommas(nStr) {
 }
 
 // Load the data.
-var url = BASE_URL + "home/ajax_get_bubble_data";
+var url = BASE_URL + "index.php/home/ajax_get_bubble_data";
 d3.csv(url, display);
 
 // setup the buttons.
