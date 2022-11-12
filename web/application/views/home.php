@@ -169,15 +169,30 @@
                   type: 'polarArea',
                   data: {
                     labels: [
-                      "Hidroxicloroquina",
-                      "Tocilizumabe",
+                      "ANTIMICROBIAL",
+                      "VIRAL",
+                      "ENZYME",
+                      "MEMBRANE",
+                      "HORMONE",
+                      "PLANT"
                     ],
                     datasets: [{
-                      data: [283,
-                        171,
+                      data: [15,
+                        488,
+                        7489,
+                        204,
+                        231,
+                        1239
                       ],
                       lineTension: 0,
-                      backgroundColor: '#1e90ff',
+                      backgroundColor: [
+                        'rgb(255, 205, 86)',
+                        'rgb(255, 99, 132)',
+                        'rgb(54, 162, 235)',
+                        'rgb(75, 192, 192)',
+                        'rgb(201, 203, 207)',
+                        'rgb(77, 195, 194)'
+                      ],
                       fill: '#1e90ff',
                       pointBackgroundColor: '#1e90ff'
                     }]
