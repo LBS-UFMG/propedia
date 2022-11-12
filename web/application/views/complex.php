@@ -26,11 +26,11 @@
                                 $complex_name = $complex_data->pdb . "_" . $complex_data->peptide_chain . "_" . $complex_data->receptor_chain;
                                 $complex_name_html = strtoupper($complex_data->pdb . "-" . $complex_data->peptide_chain . "-" . $complex_data->receptor_chain);
                             ?>
-                            <h1><strong style="padding-right: 3px"><?=$complex_name_html?></strong> <a title='Download PDB' href='<?=base_url()?>public/pdb/structures/complex/<?=$complex_name?>.pdb'><i class="fas fa-arrow-alt-circle-down"></i></a></h1>
+                            <h1 class="pt-1 m-1 ms-2 display-3 text-dark"><strong style="padding-right: 3px"><?=$complex_name_html?></strong> <a title='Download PDB' href='<?=base_url()?>public/pdb/structures/complex/<?=$complex_name?>.pdb'><i class="fas fa-arrow-alt-circle-down"></i></a></h1>
 
                             <div style="margin: 10px 0 30px 0">
                                 <a target="_blank" style='text-decoration:none' title="Search in PDB" href="https://www.rcsb.org/structure/<?=$complex_data->pdb?>">
-                                    <span class="badge bg-secondary text-muted">PDB</span>
+                                    <span class="badge bg-dark text-light ms-2">PDB</span>
                                 </a>
 
                                 <a target="_blank" style='text-decoration:none' title="Search in UniProt" href="https://www.uniprot.org/uniprot/?query=<?=$complex_data->pdb?>+database:pdb">
@@ -114,7 +114,7 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="thumbnail" style="border-left: #d9534f 5px solid; color: #ccc">
                         <div class="caption">    
-                            <h4 class="text-danger"><strong>Protein</strong></h4>   
+                            <h4 class="text-danger m-1"><strong>Protein</strong></h4>   
                             <table class="table table-condensed table-striped">  
                                 <!--<tr>
                                     <th>PDB ID</th>
@@ -185,7 +185,7 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="thumbnail" style="border-left: #337ab7 5px solid; color: #ccc">
                         <div class="caption">         
-                            <h4 class="text-primary"><strong>Peptide</strong></h4>
+                            <h4 class="text-primary m-1"><strong>Peptide</strong></h4>
                             <table class="table table-condensed table-striped">  
                                 <tr>
                                     <th>Description</th>
@@ -272,7 +272,7 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="thumbnail" style="border-left: orange 5px solid; color: #ccc">
                         <div class="caption">         
-                            <h4 class="text-warning"><strong>Clustering Classification</strong></h4>   
+                            <h4 class="text-warning m-1"><strong>Clustering Classification</strong></h4>   
                             <table class="table table-condensed table-striped">  
                                 <tr>
                                     <th>Sequence cluster</th>
@@ -344,7 +344,7 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="thumbnail" style="border-left: #ccc 5px solid; color: #ccc">
                         <div class="caption">         
-                            <h4 class="text-muted"><strong>Similar complexes</strong></h4> 
+                            <h4 class="text-muted m-1"><strong>Similar complexes</strong></h4> 
                             <p class="text-muted">Is the complex classified in the same cluster?</p>
                             <table class="table table-striped table-hover text-center">
                                 <tr>
