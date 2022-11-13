@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Propedia v2.3 - A database of peptide-protein interactions</title>
+  <title>Propedia v2.3 - Peptide-Protein Interactions Database</title>
   <meta charset="utf-8">
 
   <!-- CSS only -->
