@@ -5,7 +5,7 @@
 
           <div class="row">
             <div style="width: 100px;" class="me-2">
-              <img src="<?=base_url('/img/lbs.svg')?>" class="opacity-50" style="width:100px">
+              <img src="<?=base_url('/public/img/lbs.svg')?>" class="opacity-50" style="width:100px">
             </div>
             <div class="col">
               <!-- descrição -->
@@ -21,13 +21,13 @@
 
         <div class="col-md-3 col-12 text-end">
           <a target="_blank" alt="UFMG" href="http://ufmg.br">
-            <img src="<?=base_url('/img/ufmg_w.svg');?>" class="pt-4" width="250">
+            <img src="<?=base_url('/public/img/ufmg_w.svg');?>" class="pt-4" width="250">
           </a>
         </div>
 
         <div class="col-md-3 col-12">
           <a target="_blank" alt="DCC" href="http://dcc.ufmg.br">
-            <img src="<?=base_url('/img/dcc_w.svg');?>" class="p-4" width="250">
+            <img src="<?=base_url('public/img/dcc_w.svg');?>" class="p-4" width="250">
           </a>
         </div>
         
@@ -39,7 +39,7 @@
   <div id="pos_footer" class="text-center small text-dark py-1 px-4" style="position: relative; background: #a23737; font-size:0.6em">
     <b>©<?php echo date('Y'); ?> LBS</b> | Created by <a target="_blank" href="http://diegomariano.com" class="text-dark"><b>Diego Mariano</b></a> and
     <a target="_blank" href="http://dcc.ufmg.br/~pmartins" class="text-dark"><b>Pedro Martins</b></a> | Maintained by <a href="#" data-bs-toggle="modal" 
-    data-bs-target="#lbs_team" class="text-dark"><b>LBS I.T. team</b></a>.
+    data-bs-target="#about" class="text-dark"><b>LBS I.T. team</b></a>.
   </div>
 
 
