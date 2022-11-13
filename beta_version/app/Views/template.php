@@ -78,7 +78,7 @@
 
           <div class="row">
             <div style="width: 100px;" class="me-2">
-              <img src="<?=base_url('/img/lbs.svg')?>" class="opacity-50" style="width:100px">
+              <img src="<?=base_url('public/img/lbs.svg')?>" class="opacity-50" style="width:100px">
             </div>
             <div class="col">
               <!-- descrição -->
@@ -94,13 +94,13 @@
 
         <div class="col-md-3 col-12 text-end">
           <a target="_blank" alt="UFMG" href="http://ufmg.br">
-            <img src="<?=base_url('/img/ufmg_w.svg');?>" class="pt-4" width="250">
+            <img src="<?=base_url('public/img/ufmg_w.svg');?>" class="pt-4" width="250">
           </a>
         </div>
 
         <div class="col-md-3 col-12">
           <a target="_blank" alt="DCC" href="http://dcc.ufmg.br">
-            <img src="<?=base_url('/img/dcc_w.svg');?>" class="p-4" width="250">
+            <img src="<?=base_url('public/img/dcc_w.svg');?>" class="p-4" width="250">
           </a>
         </div>
         
@@ -126,7 +126,7 @@
         </div>
               
         <div class="modal-body">
-          <p style="text-align:center; padding:20px"><img src="<?=base_url('/img/logo3.svg');?>"></
+          <p style="text-align:center; padding:20px"><img src="<?=base_url('public/img/logo3.svg');?>"></
   p>
           <h1 style="text-align:center">LBS I.T. TEAM</h1>						
           <strong>Admin: </strong>Pedro Martins<br><br>
@@ -134,8 +134,6 @@
           <h4>LBS website</h4>
           <strong>Back-end: </strong>Pedro Martins<br>
           <strong>Front-end/design: </strong>Diego Mariano<br>
-          <strong>Traducción (Español): </strong>Susana Medina<br>
-          <strong>Translation (English): </strong><br>
 
         </div>
               
