@@ -78,7 +78,7 @@
 <div class="modal fade" tabindex="-1" id="blast" role="dialog">
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
-         <form id="form_blast_run" action="<?php echo base_url(); ?>search/sequence" method="post" enctype="multipart/form-data">
+         <form id="form_blast_run" action="<?php echo base_url(); ?>index.php/search/sequence" method="post" enctype="multipart/form-data">
             <div class="modal-header">
                <div>
                   <h3><b>Search for similar sequences</b></h3>
@@ -145,7 +145,7 @@
          <div class="modal-body">
             <div class="row">
                <div class="col-md-12">
-                  <form id="form_download_selected" action="<?php echo base_url(); ?>explore" method="post" enctype="multipart/form-data">
+                  <form id="form_download_selected" action="<?php echo base_url(); ?>index.php/explore" method="post" enctype="multipart/form-data">
                      <!-- $download_complex FROM search/sequence -->
                      <textarea id="txt_complex_list" class="form-control" name="complex_list" rows="10" readonly><?php if(isset($download_complex)) echo implode(", ", $download_complex); ?></textarea>
                      <textarea style="display:none;" id="txt_sequence_centroid_list" class="form-control" readonly></textarea>
@@ -205,7 +205,7 @@
 <div class="modal fade" tabindex="-1" id="probis" role="dialog">
    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
-         <form id="form_probis_run" action="<?php echo base_url(); ?>search/binding" method="post" enctype="multipart/form-data">
+         <form id="form_probis_run" action="<?php echo base_url(); ?>index.php/search/binding" method="post" enctype="multipart/form-data">
             <div class="modal-header">
                <div>
                   <h3><b>Search for similar binding sites</b></h3>
