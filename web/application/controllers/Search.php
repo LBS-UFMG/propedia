@@ -297,7 +297,7 @@ class Search extends CI_Controller{
         }
 
         // Ordena
-        usort($data['result'], 'cmp');
+        //usort($data['result'], 'cmp');
 
         //$data["scripts"] = array("blast.js");
         //$data["bubble_data"] = $bubble_data;

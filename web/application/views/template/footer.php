@@ -96,11 +96,11 @@
                      </div>
                      <br>
                      <h5><b>Search sequence from</b></h5>
-                     <label class="radio-inline">
-                     <input type="radio" name="search" value="peptides" checked>Peptides
+                     <label class="radio-inline me-4">
+                        <input type="radio" name="search" value="peptides" class="me-2" checked>Peptides
                      </label>
                      <label class="radio-inline">
-                     <input type="radio" name="search" value="receptors" checked>Proteins
+                     <input type="radio" name="search" value="receptors" class="me-2">Proteins
                      </label>                           
                   </div>
                </div>
