@@ -22,7 +22,7 @@
 
                         <!--<h5 class="text-muted"><strong>Alignemt Score Reference:</strong> <?=$alignment_score_ref?></h5>-->
 
-                        <h3><strong>Complex reference<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="The table and chart (below) shows the alignments values among the complex reference and others complexes in the cluster">?</a></sup></strong></h3>
+                        <h3><strong>Complex reference<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="The table and chart (below) shows the alignments values among the complex reference and others complexes in the cluster">?</a></sup></strong></h3>
                         <select id="select_complex_reference" class="form-control selectpicker" style="width: 100%" data-size="5" data-live-search="true">
                            <?php 
                               if (isset($complex_cluster_list)) {
@@ -44,7 +44,7 @@
                         
                          <div class="row">
                              <div class="col-md-6 col-sm-12">
-                                 <a id="btn_download_selected" class="btn btn-info btn-block" href="#" data-toggle="modal" data-target="#modal_download_selected">
+                                 <a id="btn_download_selected" class="btn btn-info btn-block" href="#" data-bs-toggle="modal" data-bs-target="#modal_download_selected">
                                      Download complex&nbsp;<i class="fas fa-download"></i>
                                  </a>
                              </div>                             
@@ -87,17 +87,17 @@
                   <thead>
                      <tr class="tableheader">
                         <th class="dt-center">Complex</th>
-                        <th class="dt-center">A<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="View structure A">?</a></sup></th>
-                        <th class="dt-center">B<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="View structure B">?</a></sup></th>
-                        <th class="dt-center">Complex<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="PDB - peptide chain - receptor chain">?</a></sup></th>
+                        <th class="dt-center">A<sup><a class="tip" href="#"  data-placement="top" data-bs-toggle="tooltip" title="View structure A">?</a></sup></th>
+                        <th class="dt-center">B<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="View structure B">?</a></sup></th>
+                        <th class="dt-center">Complex<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="PDB - peptide chain - receptor chain">?</a></sup></th>
                         
-                        <th class="dt-center">Inteface RMSD (&#8491;)<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Interface RMSD between centroid">?</a></sup></th>
+                        <th class="dt-center">Inteface RMSD (&#8491;)<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Interface RMSD between centroid">?</a></sup></th>
 
-                        <th class="dt-center">RMSD (&#8491;)<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="RMSD between centroid">?</a></sup></th>
+                        <th class="dt-center">RMSD (&#8491;)<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="RMSD between centroid">?</a></sup></th>
 
-                        <th class="dt-center">Identity (%)<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Identity (%) between centroid">?</a></sup></th>
+                        <th class="dt-center">Identity (%)<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Identity (%) between centroid">?</a></sup></th>
                         
-                        <th class="dt-center">Similarity (%)<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Similarity (%) between centroid">?</a></sup></th>
+                        <th class="dt-center">Similarity (%)<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Similarity (%) between centroid">?</a></sup></th>
                      </tr>
                   </thead>
                   <tbody>

@@ -27,7 +27,7 @@
 
                         <!--<h5 class="text-muted"><strong>Alignemt Score Reference:</strong> <?=$alignment_score_ref?></h5>-->
 
-                        <h3><strong>Complex reference<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="The table and chart (below) shows the alignments values among the complex reference and others complexes in the cluster">?</a></sup></strong></h3>
+                        <h3><strong>Complex reference<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="The table and chart (below) shows the alignments values among the complex reference and others complexes in the cluster">?</a></sup></strong></h3>
                         <select id="select_complex_reference" class="form-control selectpicker" style="width: 100%" data-size="5" data-live-search="true">
                            <?php 
                               if (isset($complex_cluster_list)) {
@@ -49,12 +49,12 @@
                         
                         <div class="row">
                            <div class="col-md-6 col-sm-12">
-                              <a id="btn_download_selected" class="btn btn-info btn-block" href="#" data-toggle="modal" data-target="#modal_download_selected">
+                              <a id="btn_download_selected" class="btn btn-info btn-block" href="#" data-bs-toggle="modal" data-bs-target="#modal_download_selected">
                                  Download complex&nbsp;<i class="fas fa-download"></i>
                               </a>
                            </div>                             
                            <div class="col-md-6 col-sm-12">
-                              <a id="btn_advanced_search" class="btn btn-warning btn-block" href="#" data-toggle="modal">
+                              <a id="btn_advanced_search" class="btn btn-warning btn-block" href="#" data-bs-toggle="modal">
                                  Advanced search&nbsp;<i class="fas fa-filter"></i>
                               </a>
                            </div>
@@ -76,13 +76,13 @@
                   <thead>
                      <tr class="tableheader">
                         <th class="dt-center">Complex</th>
-                        <th class="dt-center">A<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="View structure A">?</a></sup></th>
-                        <th class="dt-center">B<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="View structure B">?</a></sup></th>                        
-                        <th class="dt-center">Complex<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="PDB - peptide chain - receptor chain">?</a></sup></th>
-                        <!--<th class="dt-center">&Delta; Alignment Score<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Alignment Score reference (complex reference alignment score with itself) - Alignment Score">?</a></sup></th>
-                        <th class="dt-center">&Delta; Z-Score<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Z-Score reference (complex reference z-score with itself) - Z-Score">?</a></sup></th>-->
-                        <th class="dt-center">Alignment Score<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Alignment Score">?</a></sup></th>
-                        <th class="dt-center">Z-Score<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Z-Score">?</a></sup></th>
+                        <th class="dt-center">A<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="View structure A">?</a></sup></th>
+                        <th class="dt-center">B<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="View structure B">?</a></sup></th>                        
+                        <th class="dt-center">Complex<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="PDB - peptide chain - receptor chain">?</a></sup></th>
+                        <!--<th class="dt-center">&Delta; Alignment Score<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Alignment Score reference (complex reference alignment score with itself) - Alignment Score">?</a></sup></th>
+                        <th class="dt-center">&Delta; Z-Score<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Z-Score reference (complex reference z-score with itself) - Z-Score">?</a></sup></th>-->
+                        <th class="dt-center">Alignment Score<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Alignment Score">?</a></sup></th>
+                        <th class="dt-center">Z-Score<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Z-Score">?</a></sup></th>
                      </tr>
                   </thead>
                   <tbody>
