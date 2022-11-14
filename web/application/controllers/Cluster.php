@@ -33,7 +33,7 @@ class Cluster extends CI_Controller{
                 );
                 $this->template->show("cluster_sequence", $data);
             } else if ($cluster_size == 1) {
-                redirect("/complex/view/" . $complex_reference->complex);
+                redirect("index.php/complex/view/" . $complex_reference->complex);
             } else {
                 // CALL CLUSTER EXPLORE
                 $data = array(
@@ -206,7 +206,7 @@ class Cluster extends CI_Controller{
         $row[] = "<input type='radio' name='B' onclick='loadPDB(\"B\", \"$complex_reference->complex\")' value='".$complex_reference->complex."'>";
 
         if ($complex_reference->centroid == 1) {
-            $row[] = "<a href='".$complex_url."$complex_reference->complex' data-placement='top' data-toggle='tooltip' title='Complex centroid'>$complex_reference->complex<i class='fa fa-star icon-d'></i></a>";
+            $row[] = "<a href='".$complex_url."$complex_reference->complex' data-bs-placement='top' data-bs-toggle='tooltip' title='Complex centroid'>$complex_reference->complex<i class='fa fa-star icon-d'></i></a>";
         } else {
         $row[] = "<a href='".$complex_url."$complex_reference->complex'>$complex_reference->complex</a>";
         }
@@ -235,7 +235,7 @@ class Cluster extends CI_Controller{
             $row[] = "<input type='radio' name='B' onclick='loadPDB(\"B\", \"$complex->complex\")' value='".$complex->complex."'>";
             
             if ($complex->centroid == 1) {
-                $row[] = "<a href='".$complex_url."$complex->complex' data-placement='top' data-toggle='tooltip' title='Complex centroid'>$complex->complex<i class='fa fa-star icon-d'></i></a>";
+                $row[] = "<a href='".$complex_url."$complex->complex' data-bs-placement='top' data-bs-toggle='tooltip' title='Complex centroid'>$complex->complex<i class='fa fa-star icon-d'></i></a>";
             } else {
                 $row[] = "<a href='".$complex_url."$complex->complex'>$complex->complex</a>";
             }
@@ -292,7 +292,7 @@ class Cluster extends CI_Controller{
         $row[] = "<input type='radio' name='B' onclick='loadPDB(\"B\", \"$complex_reference->complex\")' value='".$complex_reference->complex."'>";
 
         if ($complex_reference->centroid == 1) {
-            $row[] = "<a href='".$complex_url."$complex_reference->complex' data-placement='top' data-toggle='tooltip' title='Complex centroid'>$complex_reference->complex<i class='fa fa-star icon-d'></i></a>";
+            $row[] = "<a href='".$complex_url."$complex_reference->complex' data-bs-placement='top' data-bs-toggle='tooltip' title='Complex centroid'>$complex_reference->complex<i class='fa fa-star icon-d'></i></a>";
         } else {
         $row[] = "<a href='".$complex_url."$complex_reference->complex'>$complex_reference->complex</a>";
         }
@@ -323,7 +323,7 @@ class Cluster extends CI_Controller{
             $row[] = "<input type='radio' name='B' onclick='loadPDB(\"B\", \"$complex->complex\")' value='".$complex->complex."'>";
             
             if ($complex->centroid == 1) {
-                $row[] = "<a href='".$complex_url."$complex->complex' data-placement='top' data-toggle='tooltip' title='Complex centroid'>$complex->complex<i class='fa fa-star icon-d'></i></a>";
+                $row[] = "<a href='".$complex_url."$complex->complex' data-bs-placement='top' data-bs-toggle='tooltip' title='Complex centroid'>$complex->complex<i class='fa fa-star icon-d'></i></a>";
             } else {
                 $row[] = "<a href='".$complex_url."$complex->complex'>$complex->complex</a>";
             }
@@ -381,7 +381,7 @@ class Cluster extends CI_Controller{
         $row[] = "<input type='radio' name='B' onclick='loadPDB(\"B\", \"$complex_reference->complex\")' value='".$complex_reference->complex."'>";
 
         if ($complex_reference->centroid == 1) {
-            $row[] = "<a href='".$complex_url."$complex_reference->complex' data-placement='top' data-toggle='tooltip' title='Complex centroid'>$complex_reference->complex<i class='fa fa-star icon-d'></i></a>";
+            $row[] = "<a href='".$complex_url."$complex_reference->complex' data-bs-placement='top' data-bs-toggle='tooltip' title='Complex centroid'>$complex_reference->complex<i class='fa fa-star icon-d'></i></a>";
         } else {
         $row[] = "<a href='".$complex_url."$complex_reference->complex'>$complex_reference->complex</a>";
         }
@@ -410,7 +410,7 @@ class Cluster extends CI_Controller{
             $row[] = "<input type='radio' name='B' onclick='loadPDB(\"B\", \"$complex->complex\")' value='".$complex->complex."'>";
             
             if ($complex->centroid == 1) {
-                $row[] = "<a href='".$complex_url."$complex->complex' data-placement='top' data-toggle='tooltip' title='Complex centroid'>$complex->complex<i class='fa fa-star icon-d'></i></a>";
+                $row[] = "<a href='".$complex_url."$complex->complex' data-bs-placement='top' data-bs-toggle='tooltip' title='Complex centroid'>$complex->complex<i class='fa fa-star icon-d'></i></a>";
             } else {
                 $row[] = "<a href='".$complex_url."$complex->complex'>$complex->complex</a>";
             }
@@ -494,7 +494,7 @@ class Cluster extends CI_Controller{
             $row[] = "<p class='text-center'>
                 <input hidden id='download_cluster_$cluster_num' value='$complex_list'>
                 <a onclick='send_to_download($cluster_num)' class='download_cluster' title='Download cluster complex' href='#'
-                    data-toggle='modal' data-target='#modal_download_selected'>
+                    data-bs-toggle='modal' data-bs-target='#modal_download_selected'>
                     <i class='fas fa-download'></i>
                 </a></p>";
 
