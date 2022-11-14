@@ -184,15 +184,15 @@
                      <div class="row">
                         <div class="col-md-6 col-sm-12">
                            <legend>Structures</legend>
-                           <div class="radio"><label><input type="radio" name="download_folder" value="structures/complex/" checked>Complex</label></div>
-                           <div class="radio"><label><input type="radio" name="download_folder" value="structures/receptor/">Receptor</label></div>
-                           <div class="radio"><label><input type="radio" name="download_folder" value="structures/peptide/">Peptide</label></div>
-                           <div class="radio"><label><input type="radio" name="download_folder" value="structures/interface/">Interface</label></div>
+                           <div class="radio"><label><input type="radio" name="download_folder" class="me-2" value="structures/complex/" checked>Complex</label></div>
+                           <div class="radio"><label><input type="radio" name="download_folder" class="me-2" value="structures/receptor/">Receptor</label></div>
+                           <div class="radio"><label><input type="radio" name="download_folder" class="me-2" value="structures/peptide/">Peptide</label></div>
+                           <div class="radio"><label><input type="radio" name="download_folder" class="me-2" value="structures/interface/">Interface</label></div>
                         </div>
                         <div class="col-md-6 col-sm-12">
                            <legend>Sequences</legend>
-                           <div class="radio"><label><input type="radio" name="download_folder" value="sequences/receptor/">Receptor</label></div>
-                           <div class="radio"><label><input type="radio" name="download_folder" value="sequences/peptide/">Peptide</label></div>
+                           <div class="radio"><label><input type="radio" name="download_folder" class="me-2" value="sequences/receptor/">Receptor</label></div>
+                           <div class="radio"><label><input type="radio" name="download_folder" class="me-2" value="sequences/peptide/">Peptide</label></div>
                            <!--<div class="radio"><label><input type="radio" name="download_folder" value="sequences/interface/">Interface</label></div>-->
                         </div>
                      </div>
