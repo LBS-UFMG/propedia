@@ -312,9 +312,9 @@ class Explore extends CI_Controller{
                 }
             }
         }
-        $x = '6vro_B_A, 8pch_P_A';
+
         // IN REQUEST        
-        $complex_list = explode(", ", $x);
+        $complex_list = explode(", ", $this->input->post("complex_list"));
         $download_folder = $this->input->post("download_folder");
 
         $token = md5(uniqid(rand(), true));
