@@ -294,7 +294,7 @@ class Explore extends CI_Controller{
     public function ajax_create_download_file() {
 
         if (!$this->input->is_ajax_request()) {
-            exit("Direct access not premitted!");
+          //  exit("Direct access not premitted!");
         }
 
         #DIRECTORYS
