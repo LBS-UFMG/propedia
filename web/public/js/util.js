@@ -145,7 +145,7 @@ function search_pdb(id_input_pdb, pdb_id, loading_sample=false) {
         success: function(pdb_content){
             $.ajax({
                 type: 'POST',
-                url: BASE_URL + "search/ajax_create_pdb",
+                url: BASE_URL + "index.php/search/ajax_create_pdb",
                 dataType: 'json',
                 data: {pdb_id: pdb_id, pdb_content: pdb_content},
                 success: function(response) {
@@ -235,7 +235,7 @@ function add_file_zip(zip_file, chunk_files, total) {
 
     $.ajax({
         "method": "POST",        
-        "url": BASE_URL + "explore/ajax_add_zip/", 
+        "url": BASE_URL + "index.php/explore/ajax_add_zip/", 
         "data": {
             "zip_file": zip_file,
             "add_files": chunk,
@@ -308,7 +308,7 @@ $("#btn_download_modal").click(function(e) {
         $.ajax({
             "method": "POST",
             "dataType": "json",
-            "url": BASE_URL + "explore/ajax_create_download_file/", 
+            "url": BASE_URL + "index.php/explore/ajax_create_download_file/", 
             "data": serialize,
             beforeSend: function() {
                 var size = "40";
