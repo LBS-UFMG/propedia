@@ -212,10 +212,10 @@
                </div>
                <div class="row">
                   <div class="col-md-6 col-sm-12">
-                     <button id="btn_download_modal" type="button" class="btn btn-success btn-block">Download</button>
+                     <button id="btn_download_modal" type="button" class="btn btn-success w-100">Download</button>
                   </div>
                   <div class="col-md-6 col-sm-12">
-                     <button type="button" class="btn btn-light  btn-block" data-bs-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">Cancel</button>
                   </div>
                </div>
             </div>
