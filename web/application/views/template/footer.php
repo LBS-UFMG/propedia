@@ -210,14 +210,12 @@
                      </div>
                   </div>
                </div>
-               <div class="col-12">
-                  <div class="row">
-                     <div class="col-md-12 col-sm-12">
-                        <button id="btn_download_modal" type="button" class="btn btn-success btn-block">Download</button>
-                     </div>
-                     <div class="col-md-12 col-sm-12">
-                        <button type="button" class="btn btn-light  btn-block" data-bs-dismiss="modal">Cancel</button>
-                     </div>
+               <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                     <button id="btn_download_modal" type="button" class="btn btn-success btn-block">Download</button>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                     <button type="button" class="btn btn-light  btn-block" data-bs-dismiss="modal">Cancel</button>
                   </div>
                </div>
             </div>
