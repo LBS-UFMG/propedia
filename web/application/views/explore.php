@@ -28,7 +28,7 @@
          <div class="row">
             <div class="col-md-12 col-sm-12">
                <label class="control-label label label-default">PDBs/Complex</label>
-               <sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Separator: ',' (comma). Complex format:<PDB>_<Peptide chain>_<Protein chain>. E.g.: 1a1m_C_A">?</a></sup>
+               <sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Separator: ',' (comma). Complex format:<PDB>_<Peptide chain>_<Protein chain>. E.g.: 1a1m_C_A">?</a></sup>
                <textarea rows="3" id="pdb_complex" type="text" class="form-control filter"  placeholder="1a1m_C_A, 1a1n, ..."><?php if (isset($complex_list)) echo $complex_list; ?></textarea>
 
             </div>
@@ -57,7 +57,7 @@
          <div class="row" style="margin-top: 10px">-->
             <div class="col-md-6 col-sm-12">
                <label for="id_group" class="label label-default">Groups:</label>
-               <sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Groups are keywords derived from PDB classifications">?</a></sup>
+               <sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Groups are keywords derived from PDB classifications">?</a></sup>
                <!-- <select id="id_group" class="form-control selectpicker filter" style="width: 100%" data-live-search="true" multiple title="-"> -->
                <select id="id_group" class="form-control" multiple title="-">
 
@@ -90,7 +90,7 @@
          <div class="row">         
             <div class="col-md-4 col-sm-12">
                <input type="checkbox" class="form-check-input filter select.filter" id="is_ccd" default="">
-               <label class="form-check-label text-muted" for="is_clustered">Only CCD<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Clusterable Complex Dataset">?</a></sup></label>
+               <label class="form-check-label text-muted" for="is_clustered">Only CCD<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Clusterable Complex Dataset">?</a></sup></label>
             </div>
             <div class="col-md-4 col-sm-12"></div>
             <div class="col-md-4 col-sm-12">
@@ -187,19 +187,19 @@
 
       <div class="row mb-2">
          <div class="col-md-3 col-sm-12">
-            <a id="btn_download_sequence_centroid" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download sequence centroids&nbsp;<i class="fas fa-font"></i></a>
+            <a id="btn_download_sequence_centroid" class="btn btn-outline-primary w-100" href="#" data-bs-toggle="modal" data-bs-target="#modal_download_selected">Download sequence centroids&nbsp;<i class="fas fa-font"></i></a>
          </div>
 
          <div class="col-md-3 col-sm-12">
-            <a id="btn_download_interface_centroid" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download interface centroids&nbsp;<i class="fas fa-bacon"></i></a>
+            <a id="btn_download_interface_centroid" class="btn btn-outline-primary w-100" href="#" data-bs-toggle="modal" data-bs-target="#modal_download_selected">Download interface centroids&nbsp;<i class="fas fa-bacon"></i></a>
          </div>
 
          <div class="col-md-3 col-sm-12">
-            <a id="btn_download_binding_centroid" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download binding centroids&nbsp;<i class="fab fa-hubspot"></i></a>
+            <a id="btn_download_binding_centroid" class="btn btn-outline-primary w-100" href="#" data-bs-toggle="modal" data-bs-target="#modal_download_selected">Download binding centroids&nbsp;<i class="fab fa-hubspot"></i></a>
          </div>
 
          <div class="col-md-3 col-sm-12">
-            <a id="btn_download_selected" class="btn btn-outline-primary w-100" href="#" data-toggle="modal" data-target="#modal_download_selected">Download complex&nbsp;<i class="fas fa-download"></i></a>
+            <a id="btn_download_selected" class="btn btn-outline-primary w-100" href="#" data-bs-toggle="modal" data-bs-target="#modal_download_selected">Download complex&nbsp;<i class="fas fa-download"></i></a>
          </div>
 
       </div>
@@ -219,13 +219,13 @@
          <table id="dt_complex_explore" class="table table-striped table-hover table-sm small">
             <thead>
                <tr class="tableheader">
-                  <th class="dt-center">Complex<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="PDB - peptide chain - protein chain">?</a></sup></th>
+                  <th class="dt-center">Complex<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="PDB - peptide chain - protein chain">?</a></sup></th>
 
-                  <th class="dt-center">Peptide&nbsp;size<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Peptide length in amino acids">?</a></sup></th>
+                  <th class="dt-center">Peptide&nbsp;size<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Peptide length in amino acids">?</a></sup></th>
 
-                  <th class="dt-center">Protein&nbsp;size<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="Protein length in amino acids">?</a></sup></th>
+                  <th class="dt-center">Protein&nbsp;size<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="Protein length in amino acids">?</a></sup></th>
 
-                  <th class="dt-center">Resolution&nbsp;(&#8491;)<sup><a class="tip" href="#"  data-placement="top" data-toggle="tooltip" title="X-Ray resolution">?</a></sup></th>
+                  <th class="dt-center">Resolution&nbsp;(&#8491;)<sup><a class="tip" href="#"  data-bs-placement="top" data-bs-toggle="tooltip" title="X-Ray resolution">?</a></sup></th>
                   <th>Protein Name</th>
                   <!--<th>Organism</th>-->
                   <th>Classification</th>
