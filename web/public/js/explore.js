@@ -13,6 +13,10 @@ $(function() {
 		"searching":  true,
 		"responsive": true,
 		"deferLoading": 0, // here
+		dom: 'Bfrtip',
+            "buttons": [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
 		"ajax": {
 			"url": BASE_URL + "index.php/explore/ajax_list_complex",
 			"type": "POST",
