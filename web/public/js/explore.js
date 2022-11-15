@@ -17,6 +17,7 @@ $(function() {
             "buttons": [
                 'copy', 'csv', 'excel', 'pdf', 'print'
             ],
+			"lengthChange":true,
 		"ajax": {
 			"url": BASE_URL + "index.php/explore/ajax_list_complex",
 			"type": "POST",
