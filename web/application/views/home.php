@@ -33,7 +33,7 @@
             <div class="col-8 text-end">
               <h1 class="mt-3">
                 <strong>
-                  <a class="text-success" href="<?php echo base_url('/explore'); ?>">
+                  <a class="text-success" href="<?php echo base_url('index.php/explore'); ?>">
                     <?= number_format($complex_number) ?>
                   </a>
                 </strong>
@@ -52,7 +52,7 @@
               <i class="fas fa-font"></i>
             </div>
             <div class="col-md-8 text-end">
-              <h1 class="mt-3"><strong><a class="text-success" href="<?php echo base_url('/cluster/sequence'); ?>">
+              <h1 class="mt-3"><strong><a class="text-success" href="<?php echo base_url('index.php/cluster/sequence'); ?>">
                     <?= number_format($cluster_info["number_cluster_sequence"]) ?>
                   </a></strong>
               </h1>
@@ -70,7 +70,7 @@
               <i class="fas fa-bacon"></i>
             </div>
             <div class="col-md-8 text-end">
-              <h1 class="mt-3"><strong><a class="text-success" href="<?php echo base_url('/cluster/interface'); ?>">
+              <h1 class="mt-3"><strong><a class="text-success" href="<?php echo base_url('index.php/cluster/interface'); ?>">
                     <?= number_format($cluster_info["number_cluster_interface"]) ?>
                   </a></strong>
               </h1>
@@ -90,7 +90,7 @@
             <div class="col-md-8 text-end">
               <h1 class="mt-3">
                 <strong>
-                  <a class="text-success" href="<?php echo base_url('/cluster/binding'); ?>">
+                  <a class="text-success" href="<?php echo base_url('index.php/cluster/binding'); ?>">
                     <?=number_format($cluster_info["number_cluster_binding"]) ?>
                   </a>
                 </strong>
@@ -102,7 +102,7 @@
       </div>
     </div>
   </div>
-  <h5 class="text-muted">*Last updated on: Dec 2022</h5>
+  <h5 class="text-muted">*Last updated on: Nov 2022</h5>
 </div>
 
 <div class="container">
