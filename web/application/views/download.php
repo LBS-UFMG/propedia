@@ -56,6 +56,9 @@ liase@liase:/scratch/propedia2023/pdb/structures$ ll interface | wc -l
             </tr>     
          </tbody>
       </table>
+
+      <hr class="my-5">
+      
       <h2>Propedia v.1</h2>
       <h3>Download CSV File</h3>
       <table class="table table-hover table-striped">
