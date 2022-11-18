@@ -1,5 +1,62 @@
+<!-- liase@liase:/scratch/propedia2023/pdb/structures$ ll peptide | wc -l
+28581
+liase@liase:/scratch/propedia2023/pdb/structures$ ll complex | wc -l
+49300
+liase@liase:/scratch/propedia2023/pdb/structures$ ll receptor | wc -l
+35478
+liase@liase:/scratch/propedia2023/pdb/structures$ ll interface | wc -l
+49300 -->
+
 <div class="container" style="padding: 50px 0">
    <div id="download">
+   <h2>Propedia v2.3 <label class="badge bg-warning">New</label></h2>
+      <table class="table table-hover table-striped">
+         <thead>
+            <tr class="table-primary">
+               <th>File</th>
+               <th>Description</th>
+               <th>File size</th>
+               <th>Download</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Peptides (28,5810)</td>
+               <td>PDB file (zip)</td>
+               <td>97MB</td>
+               <td><a target="_blank" href="<?php echo base_url('public/download/peptides2_3.zip'); ?>">complex2_3.zip</a></td>
+            </tr>          
+            
+            <tr>
+               <td>Receptors (35,478)</td>
+               <td>PDB file (zip)</td>
+               <td>1.6GB</td>
+               <td><a target="_blank" href="<?php echo base_url('public/download/receptors2_3.zip'); ?>">complex2_3.zip</a></td>
+            </tr>      
+
+            <tr>
+               <td>Complexes (49,300)</td>
+               <td>PDB file (zip)</td>
+               <td>2.4GB</td>
+               <td><a target="_blank" href="<?php echo base_url('public/download/complex2_3.zip'); ?>">complex2_3.zip</a></td>
+            </tr>      
+
+            <tr>
+               <td>Interfaces (49,300)</td>
+               <td>PDB file (zip)</td>
+               <td>391MB</td>
+               <td><a target="_blank" href="<?php echo base_url('public/download/interfaces2_3.zip'); ?>">interfaces2_3.zip</a></td>
+            </tr>     
+            
+            <tr>
+               <td>Sequences</td>
+               <td>FASTA file (zip)</td>
+               <td>38MB</td>
+               <td><a target="_blank" href="<?php echo base_url('public/download/sequences2_3.zip'); ?>">sequences2_3.zip</a></td>
+            </tr>     
+         </tbody>
+      </table>
+      <h2>Propedia v.1</h2>
       <h3>Download CSV File</h3>
       <table class="table table-hover table-striped">
          <thead>

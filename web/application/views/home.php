@@ -34,7 +34,8 @@
               <h1 class="mt-3">
                 <strong>
                   <a class="text-success" href="<?php echo base_url('index.php/explore'); ?>">
-                    <?= number_format($complex_number) ?>
+                    <!-- <//?= number_format($complex_number) ?> -->
+                    ~49,300
                   </a>
                 </strong>
               </h1>
