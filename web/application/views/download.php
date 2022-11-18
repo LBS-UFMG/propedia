@@ -21,7 +21,7 @@ liase@liase:/scratch/propedia2023/pdb/structures$ ll interface | wc -l
          </thead>
          <tbody>
             <tr>
-               <td>Peptides (28,5810)</td>
+               <td>Peptides (28,581)</td>
                <td>PDB file (zip)</td>
                <td>97MB</td>
                <td><a target="_blank" href="<?php echo base_url('public/download/peptides2_3.zip'); ?>">complex2_3.zip</a></td>
