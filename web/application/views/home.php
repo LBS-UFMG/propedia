@@ -39,7 +39,7 @@
                   </a>
                 </strong>
               </h1>
-              <p class="text-muted small"><strong>PEPTIDE COMPLEXES*</strong></p>
+              <p class="text-muted small"><strong>PEPTIDE COMPLEXES*</strong></p> 
             </div>
           </div>
         </div>
