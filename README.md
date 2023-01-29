@@ -4,6 +4,14 @@ Welcome to **Propedia - A database of peptide-protein interactions**. PROPEDIA i
 
 In this repository, we present the source code of PROPEDIA v2.3 - the new free and open-access version. This page describes how to use PROPEDIA and construct your instance of PROPEDIA.
 
+## About this repository
+This GIT repository contains the Propedia's web source code.
+
+### web (v2.3)
+This directory contains the main version of the web application. Developed with CodeIgniter 3.
+
+### beta_version
+Trial version updated with CodeIgniter 4 (in development).
 
 ## Using Propedia web
 
@@ -224,31 +232,23 @@ You will see the following message:
 Access http://localhost:8080 in your favorite browser.
 
 ### Installing the beta version
-Beta version uses CodeIgniter 4. Thus, it requires Composer for installing. 
+The beta version uses CodeIgniter 4. Thus, it requires Composer to install.
 
 Firstly, clone this repository:
 
 	git clone https://github.com/LBS-UFMG/propedia.git
 
-Then, access the beta_version folder and install the libraries dependences:
+Then, access the beta_version folder and install the library's dependencies:
 
 	cd beta_version
 	composer install
 
-Set your basic configurations at the ".env" file. Change the base URL and the database configurations.
+Set your basic configurations in the ".env" file. Change the base URL and the database configurations.
 
 Lastly, run the web server with the command:
 
 	php spark serve
 
-**IMPORTANT:** Note that the "beta_version" is in development. You can help to improve this version, downloading the code and submitting your pull requests.
+**IMPORTANT:** Note that the "beta_version" is in development. You can help to improve this version and contribute to PROPEDIA's development community by downloading the code and submitting your pull requests.
 
 
-## About this repository
-This repository contains the Propedia's web source code.
-
-### web (v2.3)
-This directory contains the main version of the web application. Developed with CodeIgniter 3.
-
-### beta_version
-Trial version updated with CodeIgniter 4. In development.
