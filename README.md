@@ -23,6 +23,7 @@ PROPEDIA was developed by the LBS team (Laboratory of Bioinformatics and Systems
 
 You can download the whole Propedia dataset in different formats through the link: <a href="http://bioinfo.dcc.ufmg.br/propedia2/index.php/download">http://bioinfo.dcc.ufmg.br/propedia2/index.php/download</a>. Additionally, below we listed the main formats available.
 
+<h2>Propedia v2.3</h2>
 <table>
     <thead>
     <tr>
@@ -39,28 +40,24 @@ You can download the whole Propedia dataset in different formats through the lin
         <td>97MB</td>
         <td><a target="_blank" href="http://bioinfo.dcc.ufmg.br/propedia2/public/download/peptides2_3.zip">peptides2_3.zip</a></td>
     </tr>          
-    
     <tr>
         <td>Receptors (35,478)</td>
         <td>PDB file (zip)</td>
         <td>1.6GB</td>
         <td><a target="_blank" href="http://bioinfo.dcc.ufmg.br/propedia2/public/download/receptor2_3.zip">repeceptor2_3.zip</a></td>
     </tr>      
-
     <tr>
         <td>Complexes (49,300)</td>
         <td>PDB file (zip)</td>
         <td>2.4GB</td>
         <td><a target="_blank" href="http://bioinfo.dcc.ufmg.br/propedia2/public/download/complex2_3.zip">complex2_3.zip</a></td>
     </tr>      
-
     <tr>
         <td>Interfaces (49,300)</td>
         <td>PDB file (zip)</td>
         <td>391MB</td>
         <td><a target="_blank" href="http://bioinfo.dcc.ufmg.br/propedia2/public/download/interfaces2_3.zip">interfaces2_3.zip</a></td>
     </tr>     
-    
     <tr>
         <td>Sequences</td>
         <td>FASTA file (zip)</td>
