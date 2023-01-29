@@ -31,3 +31,5 @@ beta_version/.env
 beta_version/writable/logs/*
 
 .DS_Store
+web/.DS_Store
+web/public/.DS_Store
